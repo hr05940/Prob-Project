@@ -1,4 +1,3 @@
-import random as rndm
 import matplotlib.pyplot as plt
 import numpy as np
 import math as m
@@ -43,4 +42,5 @@ def gen_points(l_r):
     plt.show()
 
 #Testing
-print(gen_points(10))
+R = input("Enter the radius: ")
+gen_points(int(R))
