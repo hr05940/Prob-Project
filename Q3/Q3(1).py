@@ -40,7 +40,7 @@ def gen_points(l_radius):
     plt.plot(X,Y,'.',color="blue")
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
-    plt.title("Plotting Random Points")
+    plt.title("Graph of 3.1")
     plt.show()
 
 #Testing

@@ -38,7 +38,7 @@ def gen_points(l_r):
     plt.plot(X,Y,'.',color="red")
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
-    plt.title("Graph of Random points of x and y")
+    plt.title("Graph of 3.2")
     plt.show()
 
 #Testing
