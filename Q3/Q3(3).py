@@ -5,7 +5,7 @@ import math as m
 def random_point(radius):
 
     #R=radius, theta=angle
-    R = radius*m.sqrt(np.random.uniform(0, 1))  #random R in range 0-R
+    R = radius*(np.random.uniform(0,1))**(1/3)     #random R in range 0-R
     theta = np.random.uniform(0, 360)*(m.pi/180)   #random theta between 0-360 degrees
     return(polar_to_cart(R,theta))
 
@@ -32,12 +32,12 @@ def gen_points(l_radius):
     #Drawing the circle
     #Outer Circle
     fig, axes = plt.subplots()
-    circle1 = plt.Circle((0,0),2,Fill=False,color="red")
+    circle1 = plt.Circle((0,0),l_radius,Fill=False,color="red")
     axes.set_aspect(1)
     axes.add_artist(circle1)
 
     #inner circle
-    circle2 = plt.Circle((0,0),1,Fill=False,color="green")
+    circle2 = plt.Circle((0,0),l_radius/2,Fill=False,color="green")
     axes.set_aspect(1)
     axes.add_artist(circle2)
     fig.legend([circle1,circle2],["outer circle", "inner circle"])
@@ -50,4 +50,4 @@ def gen_points(l_radius):
     plt.show()
 
 #Testing
-x = gen_points(2)
+x = gen_points(5)
