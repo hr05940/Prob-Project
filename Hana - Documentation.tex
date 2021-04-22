@@ -58,7 +58,7 @@
 
 \setlength\FrameSep{4pt}
 \title{Probability \& Statistics\\ Project}
-\author{Hana Ali Rashid, hr05940\\ Tasmiya Malik, tm06183\\ Ifrah Ilyas, Student ID}
+\author{Hana Ali Rashid, hr05940\\ Tasmiya Malik, Student ID\\ Ifrah Ilyas, Student ID}
 \date{\today{}}
 \begin{document}
 \maketitle
@@ -110,67 +110,4 @@ Function implementation in Python:
 Calling the function for several iterations to get multiple expected values:
 \lstinputlisting[firstline=81,lastline=104,language=python]{q1.py}
 
-%--------------------------------  2.*  ------------------------------------
-
-
-
-%--------------------------------  3.*  ------------------------------------
-\section*{Q3. Picking a Random Point Correctly}
-
-\subsection*{3.1}
-
-\begin{framed}
-  For part $3.1$, we followed the method specified in the question. The program takes radius as an input from the user, and passes it to \emph{gen\_points(R)} to display the graph.
-  \begin{itemize}
-    \item \emph{polar\_to\_cart(r,t)}: This function takes the polar cordinates $(r \text{and} \theta)$ and converts them to their cartesian equivalent. It is called from \emph{polar\_point(R)}, to return the cartesian cordinates.
-    \item \emph{polar\_point(R)}: The function is responsible for generating a random point in polar cordinates, and returns the converted cartesian cordinates.
-    \item \emph{gen\_points(R)}: This is the main function which runs 1000 iterations, and calls \emph{random\_point(R)}, stores the result in the separate lists for $X$ and $Y$ cordinates. Then the lists are passed to the plot functions, to graph the points.
-
-  \end{itemize}
-\end{framed}
-
-\lstinputlisting[firstline=1,lastline=48,language=python]{Prob-Project/Q3/Q3(1).py}
-
-\begin{figure}[h]
-  \caption{radius = 100, variance of x = 1626.2176657086331}
-  \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(1).png}
-\end{figure}
-
-%--------------------------------  3.2  ------------------------------------
-\subsection*{3.2}
-\begin{framed}
-  \indent In part $3.2$, we calculated the cartesian cordinates directly from the specified radius R. If the random point lied farther from the distance from the origin, it will be discarded and the program will find a new point.
-  \begin{itemize}
-    \item \emph{random\_point(R)}: This function finds random points for $x$ and $y$ cordinates between the range $-R$ and $R$. It returns the tuple with cartesian cordinates.
-    \item \emph{dist\_from\_origin(x,y)}: The function find and return the distance of the point from the origin.
-    \item \emph{gen\_points(R)}: The main function iterates 1000 times and calls \emph{random\_point(R)}. Then it checks the condition that if the distance of the point $(x,y)$ is within the radius $R$, it would append the points to their respective lists, else the counter will be decremented by 1 and the point will not be added to the list. Then the lists $X$ and $Y$ are passed to the plot functions for display.
-  \end{itemize}
-\end{framed}
-\lstinputlisting[firstline=1,lastline=46,language=python]{Prob-Project/Q3/Q3(2).py}
-\begin{figure}[h]
-  \caption{radius = 100, variance of x = 2533.130556271337}
-  \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(2).png}
-\end{figure}
-
-
-%--------------------------------  3.3  ------------------------------------
-\subsection*{3.3}
-\begin{framed}
-  \indent In part $3.3$, we had to modify the function for polar cordinates, such that the graph it made was uniformly distributed, similar to part $3.2$.
-
-  \begin{itemize}
-    \item \emph{random\_point(R)}:
-    \item \emph{polar\_to\_cart(cord)}:
-    \item \emph{gen\_points(R)}:
-  \end{itemize}
-\end{framed}
-\lstinputlisting[firstline=1,lastline=53,language=python]{Prob-Project/Q3/Q3(3).py}
-
-\begin{figure}[h]
-  \caption{radius = 2, variance of x = 1.017564829759483}
-  \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(3).png}
-\end{figure}
 \end{document}
