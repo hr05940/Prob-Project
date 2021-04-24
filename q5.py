@@ -1,6 +1,6 @@
 import random
 from matplotlib import pyplot as plt
-import  fishCImport  as f
+import  fishC  as f
 import statistics
 
 # --------------------------- 5.1 ------------------------------
@@ -45,12 +45,13 @@ def hypothesis_test(u_0, n):
         s.append(f.fish())
     u = round(sum(s)/n,3) #sample mean
     var = statistics.variance(s) #sample variance 
+    
     prob = 0
-    for i in s:
-        if abs(s - u_0) >= abs(u-u_0):
+    for i in s: #calculating probability
+        if abs(i - u_0) >= abs(u-u_0):
             prob += (1/30)
     print(prob)
-    if prob < 0.05:
+    if prob < 0.05: #comparing with threshold
         return 1 # 1 == rejected
     else:
         return 0
