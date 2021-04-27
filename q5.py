@@ -7,6 +7,7 @@ import statistics
 import numpy as np
 
 # --------------------------- 5.1 ------------------------------
+
 def cointoss():
     #assuming 0 = T & 1 = H
     return(random.randint(0,1)) 
@@ -36,7 +37,7 @@ def simulate_tosses():
 
 # simulate_tosses()
 
-# ------------------------------------ 5.2 ---------------------------------------------
+# --------------------------- 5.2.1 ------------------------------
 
 def hypothesis_test(u_0, n):
     s = []
@@ -71,14 +72,15 @@ def experiments():
     plt.savefig("Q5_histograms/Q5.2.1.png")
     plt.show()
 
+# --------------------------- 5.2.2 ------------------------------
 
 def experiments_updated():
     u_0 = 23 #population mean
     n = 70 #sample size
     expected = []
-    for j in range(100):
+    for j in range(100): #getting 100 expected values
         outcomes = []
-        for i in range(50):
+        for i in range(50): #conducting 50 hypothesis tests
             outcomes.append(hypothesis_test(u_0,n))
         expected.append(sum(outcomes)/50)
     #plotting histogram
@@ -90,15 +92,16 @@ def experiments_updated():
     plt.savefig("Q5_histograms/Q5.2.2.png")
     plt.show()
 
-experiments_updated()
+# experiments_updated()
 
-# ------------------------------------------------- 5.2.3---------------------------------------------
+# --------------------------- 5.2.3 ------------------------------
+
 def my_fish():
     return np.random.normal(23,3)
 
 def testing(u_0,n):
     s = []
-    for i in range(n): #catching a sample of 30 fish
+    for i in range(n): #catching a sample of 30 fish using the new fish function
         s.append(my_fish())
     s = np.array(s)
     std = s.std() #sample standard deviation
@@ -112,33 +115,21 @@ def testing(u_0,n):
 
 def simulation():
     u_0 = 23 #population mean 
-    n = 40
+    n = 90 #sample size
     expected = []
-    for j in range(100):
+    for j in range(100): #getting 100 expected values
         outcomes = []
-        for i in range(50):
+        for i in range(50):  #conducting 50 hypothesis tests
             outcomes.append(testing(u_0,n))
         expected.append(sum(outcomes)/50)
     #plotting histogram
     fig, ax = plt.subplots(figsize =(10, 7))
-    a = np.arange(0,2,0.1)
-    ax.hist(expected, bins = a)
+    ax.hist(expected, width = 0.03)
     ax.set_xlabel('Times the null hypothesis is rejected')
     ax.set_ylabel('Frequency')
     plt.title('Population Mean: '+str(u_0)+', Sample Size: '+str(n)+'\n Mean: '+str(round(statistics.mean(expected),3))+', Variance: '+str(round(statistics.variance(expected),3)))
-    plt.savefig("Q5_histograms/Q5.2.3_"+str(n)+"(3).png")
+    plt.savefig("Q5_histograms/Q5.2.3_"+str(n)+".png")
     plt.show()
 
 # simulation()
 
-# 5.2.1:
-# - is mean supposed to be equal to null hypothesis
-
-# 5.1:
-# - hist looks odd
-
-# 5.2.2:
-# - is this it?
-
-# 5.2.3:
-# - mean isnt going to 10...

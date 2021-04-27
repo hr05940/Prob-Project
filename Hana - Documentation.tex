@@ -64,19 +64,12 @@
 \begin{document}
 \maketitle
 
-% \noindent \hrulefill \\
-% \textbf{Instructions:}
-% \begin{itemize}
-%     \item \textbf{Pairs can not be cross-section.}
-% \end{itemize}
-
-% \noindent \hrulefill
 
 \section*{Q1: Random Walk}
 \subsection*{1.1}
-Function implementation in Python:
+In order to simulate a random walk, the following function takes in values of $n$ (number of steps to take), and $p$ (the probability of the object moving one step to the right). It then generates a random number and uses the given probability to determine the direction that the object moves in, and returns the final position.
 \lstinputlisting[firstline=5,lastline=13,language=python]{q1.py}
-Calling the function for several iterations to get multiple expected values:
+The following function uses the \texttt{get\_updated\_position()} function to get 25 outcomes which are then used to calculate a single expected value for the final position. This is repeated 50 times and the histogram of all these expected values is then plotted.
 \lstinputlisting[firstline=16,lastline=31,language=python]{q1.py}
 \pagebreak
 
@@ -101,9 +94,9 @@ Histogram $(c)$ also appears to follow a normal distribution, having a mean of $
 \pagebreak
 %--------------------------------  1.2  ------------------------------------
 \subsection*{1.2}
-Function implementation in Python:
+The following function is the modified version of the \texttt{get\_updated\_position()} function from the previous part such that the object cannot move into the negative part of the number line.
 \lstinputlisting[firstline=34,lastline=42,language=python]{q1.py}
-Calling the function for several iterations to get multiple expected values:
+The following function uses the \texttt{get\_updated\_position\_restricted()} function to get 25 outcomes which are then used to calculate a single expected value for the final position. This is repeated 50 times and the histogram of all these expected values is then plotted.
 \lstinputlisting[firstline=44,lastline=59,language=python]{q1.py}
 \pagebreak
 
@@ -129,12 +122,12 @@ Additionally, due to the added constraint in this part, we see that no expected 
 \pagebreak
 %--------------------------------  1.3  ------------------------------------
 \subsection*{1.3}
-Function implementation in Python:
+In this part, we are required to find the number of steps taken by two objects initialized at different points, and moving randomly to meet. The following function takes in the initial position of both objects $pos1$ and $pos2$ as well as their probabilities $p1$ and $p2$, generates random numbers and determines the number of steps taken to meet.
 \lstinputlisting[firstline=61,lastline=75,language=python]{q1.py}
-Calling the function for several iterations to get multiple expected values:
+The following function uses the \texttt{stepsToMeet} function and calculates 25 expected values using 25 outcomes based on the values of $pos1, pos2, p1$ and $p2$. It then plots a histogram of these expected values as well.
 \lstinputlisting[firstline=77,lastline=97,language=python]{q1.py}
 \pagebreak
-Histograms produced by the above code for expected number of steps taken for two objects walking randomly to meet, against frequency. $p1$ and $p2$ are the respective probabilities of object 1 and object 2 moving one step to the right, and $pos1$ and $pos2$ denote the starting positions of object 1 and object 2 respectively.\\
+Histograms produced by the above code for expected number of steps taken for two objects walking randomly to meet, against frequency:\\
 
 \begin{center}
   \includegraphics[scale = 0.5]{Q1_histograms/1.3/Q1.3 _p1 = 0.6_p2 = 0.3_pos1 = -2_pos2 = 4.png}
@@ -148,10 +141,11 @@ The above histogram shows that the expected number of steps to meet for two obje
 \pagebreak
 \section*{Q5: Hypothesis Testing}
 \subsection*{5.1}
-Function that implements the simulation of a fair coin:
-\lstinputlisting[firstline=10,lastline=12,language=python]{q5.py}
-Function that uses the above function to simulate 10 coin tosses multiple times and finds the expected number of times the null hypothesis is rejected:
-\lstinputlisting[firstline=14,lastline=35, language=python]{q5.py}
+\textbf{This question requires us to use hypothesis testing to determine whether the null hypothesis that a coin is fair is true or not. }\\
+The following function implements the simulation of a fair coin:
+\lstinputlisting[firstline=11,lastline=13,language=python]{q5.py}
+This function then uses the above function to simulate 10 coin tosses 100 times and finds the expected number of times the null hypothesis is rejected for each iteration:
+\lstinputlisting[firstline=15,lastline=36, language=python]{q5.py}
 Histogram of expected values:
 \begin{center}
   \includegraphics[scale = 0.5]{Q5_histograms/Q5.1.png}
@@ -161,12 +155,13 @@ Probability we will reject the null hypothesis even though it is true:\\
 \emph{Mathematically}: We reject the null hypothesis if the probability of the outcomes is below the threshold. Since the probability of the outcomes being accepted is 0.95 and the probability of them being rejected is 0.05, the probability that we reject the null hypothesis even though it is true is also 0.05 which is equal to the threshold.
 
 \subsection*{5.2.1}
+\textbf{This question requires us to use hypothesis testing to determine the validity of the null hypothesis that the mean length of fish in a lake is 23.}\\
 The following function conducts a single hypothesis test by taking a sample of $30$ fish and calculating the mean and standard deviation of their lengths to check the following condition to accept or reject the null hypothesis:
 \[P(|S - u_0| \geq a) < 0.05\]
 The function returns $1$ if the hypothesis is rejected, and $0$ if it is accepted.
-\lstinputlisting[firstline=41,lastline=53,language=python]{q5.py}
+\lstinputlisting[firstline=42,lastline=54,language=python]{q5.py}
 The following function performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
-\lstinputlisting[firstline=56,lastline=72,language=python]{q5.py}
+\lstinputlisting[firstline=57,lastline=73,language=python]{q5.py}
 Histogram of expected values of the null hypothesis being rejected:
 \begin{center}
   \includegraphics[scale = 0.5]{Q5_histograms/Q5.2.1.png}
@@ -175,12 +170,36 @@ The histogram follows a normal disttribution with mean 0.951 and variance 0.001.
 
 \subsection*{5.2.2}
 The following function calls the \texttt{hypothesis\_test()} function defined in $5.2.1$ using the same value for the population mean $u_0$ $(23)$ but passing a value of 70 for the sample size $n$. It then performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
-\lstinputlisting[firstline=75,lastline=91,language=python]{q5.py}
+\lstinputlisting[firstline=77,lastline=92,language=python]{q5.py}
 Histogram of expected values of the null hypothesis being rejected:
 \begin{center}
   \includegraphics[scale = 0.5]{Q5_histograms/Q5.2.2.png}
 \end{center}
 Increasing the value of $n$ made the variance become $0$ where it was previously 0.001. In other words, the null hypothesis is rejected $100\%$ of the times. A single hypothesis test may have been sufficient to reject the null hypothesis in this case as there is no variance in the outcome.
 
+\subsection*{5.2.3}
+\textbf{Determining the least value of $n$ to ensure that the null hypothesis is not wrongly rejected more than 10 percent of the time using simulations.}\\ 
+
+The following is a function that returns the length of a fish following a normal distribution with mean 23 and standard deviation 3.
+\lstinputlisting[firstline=99,lastline=100,language=python]{q5.py}
+
+In order to calculate the expected number of times the null hypothesis is rejected, we use the following function which takes in the value of the population mean $u_0$ and sample size $n$ and uses the \texttt{my\_fish()} function defined above to create the sample for the test. It then conducts the test itself the same way as the previous parts but with a threshold of 0.1.
+\lstinputlisting[firstline=102,lastline=114,language=python]{q5.py}
+
+We then use the following function which calls the \texttt{testing()} function, performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=116,lastline=132,language=python]{q5.py}
+\pagebreak
+Conducting simulations with various values of $n$, we achieve the above histograms.
+\begin{figure}
+  \centering
+  \mbox{\subfigure{\includegraphics[scale = 0.35]{Q5_histograms/Q5.2.3_85.png}}\quad
+  \subfigure{\includegraphics[scale = 0.35]{Q5_histograms/Q5.2.3_90.png}}}
+\end{figure}
+\begin{figure}
+  \centering
+  \mbox{\subfigure{\includegraphics[scale = 0.35]{Q5_histograms/Q5.2.3_95(1).png}}\quad
+  \subfigure{\includegraphics[scale = 0.35]{Q5_histograms/Q5.2.3_95(10).png}}}
+\end{figure}
+In order to determine the least value of $n$ to ensure that the null hypothesis is not wrongly rejected more than 10 percent of the times, we want a value of $n$ that gives a mean of 0.1. According to the simulations, the value of $n$ satisfying this condition is \textbf{90}. 
 
 \end{document} 
