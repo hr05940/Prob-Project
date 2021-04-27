@@ -19,6 +19,7 @@
 \usepackage{float}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{subfigure}
 \tikzset{
   % define the bar graph element
   bar/.pic={
@@ -64,52 +65,79 @@
 \begin{document}
 \maketitle
 
-% \noindent \hrulefill \\
-% \textbf{Instructions:}
-% \begin{itemize}
-%     \item \textbf{Pairs can not be cross-section.}
-% \end{itemize}
-
-% \noindent \hrulefill
-
+%--------------------------------  1.2  ------------------------------------
 \section*{Q1: Random Walk}
 \subsection*{1.1}
-Function implementation in Python:
-\lstinputlisting[firstline=5,lastline=13,language=python]{codes/q1.py}
-Calling the function for several iterations to get multiple expected values:
-\lstinputlisting[firstline=16,lastline=33,language=python]{"codes/q1.py}
+In order to simulate a random walk, the following function takes in values of $n$ (number of steps to take), and $p$ (the probability of the object moving one step to the right). It then generates a random number and uses the given probability to determine the direction that the object moves in, and returns the final position.
+\lstinputlisting[firstline=5,lastline=13,language=python]{code/q1.py}
+The following function uses the \texttt{get\_updated\_position()} function to get 25 outcomes which are then used to calculate a single expected value for the final position. This is repeated 50 times and the histogram of all these expected values is then plotted.
+\lstinputlisting[firstline=16,lastline=31,language=python]{code/q1.py}
 \pagebreak
-Histograms produced by the above code for various combinations of $n$ and $p$:\\
-\includegraphics[scale = 0.5]{Q1/1.1/q1_n = 10_ p = 0.5.png}\\
-The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1/1.1/q1_n = 18_ p = 0.5.png}\\
-The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1/1.1/q1_n = 10_ p = 0.7.png}\\
-The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
+
+\begin{figure}
+  \centering
+  \mbox{\subfigure[No. of steps taken = 10 with probability of moving a step right = 0.5.]{\includegraphics[scale = 0.35]{Q1/1.1/q1_n = 10_ p = 0.5.png}}\quad
+  \subfigure[No. of steps taken = 18 with probability of moving a step right = 0.5.]{\includegraphics[scale = 0.35]{Q1/1.1/q1_n = 18_ p = 0.5.png} }}
+\end{figure}
+\begin{figure}
+  \centering
+  \mbox{\subfigure[No. of steps taken = 10 with probability of moving a step right = 0.7.]{\includegraphics[scale = 0.4]{Q1/1.1/q1_n = 10_ p = 0.7.png}}}
+\end{figure}
+
+Histograms produced by the above code for expected final positions of objects against frequency, where $n$ is the number of steps taken and $p$ is the probability of the object moving one step to the right.\\
+\\
+Histograms $(a)$ and $(b)$ have the same value of $p$ and varying number of steps $n$. \\
+Both histograms appear to follow a normal distribution, with $(a)$ having a mean of $-0.235$ and a variance of $0.35$ and $(b)$ having a mean of $-0.205$ and a variance of $0.61$. Increasing the number of steps has not had a significant effect on the mean but did increase the variance.\\ \\
+Histograms $(a)$ and $(c)$ have the same number of steps $n$ and varying values of $p$. \\
+Histogram $(c)$ also appears to follow a normal distribution, having a mean of $3.859$ and a variance of $0.273$. Increasing $p$ appears to have affected the mean of the distribution but not the variance as such.\\
+
+
 \pagebreak
 %--------------------------------  1.2  ------------------------------------
 \subsection*{1.2}
-Function implementation in Python:
-\lstinputlisting[firstline=36,lastline=44,language=python]{codes/q1.py}
-Calling the function for several iterations to get multiple expected values:
-\lstinputlisting[firstline=46,lastline=63,language=python]{codes/q1.py}
+The following function is the modified version of the \texttt{get\_updated\_position()} function from the previous part such that the object cannot move into the negative part of the number line.
+\lstinputlisting[firstline=34,lastline=42,language=python]{code/q1.py}
+The following function uses the \texttt{get\_updated\_position\_restricted()} function to get 25 outcomes which are then used to calculate a single expected value for the final position. This is repeated 50 times and the histogram of all these expected values is then plotted.
+\lstinputlisting[firstline=44,lastline=59,language=python]{code/q1.py}
 \pagebreak
-Histograms produced by the above code for various combinations of $n$ and $p$:\\
-\includegraphics[scale = 0.5]{Q1/1.2/Q1.2 _n = 20_p = 0.5.png}\\
-The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1/1.2/Q1.2 _n = 24_p = 0.5.png}\\
-The above histogram shows that...\\
-\includegraphics[scale = 0.5]{Q1/1.2/Q1.2 _n = 20_p = 0.7.png}\\
-The above histogram shows that...\\
-\includegraphics[scale = 0.5]{Q1/1.2/Q1.2 _n = 23_p = 0.7.png}
+
+\begin{figure}
+  \centering
+  \mbox{\subfigure[No. of steps taken = 20 with probability of moving a step right = 0.5.]{\includegraphics[scale = 0.35]{Q1/1.2/Q1.2 _n = 20_p = 0.5.png}}\quad
+  \subfigure[No. of steps taken = 24 with probability of moving a step right = 0.5.]{\includegraphics[scale = 0.35]{Q1/1.2/Q1.2 _n = 24_p = 0.5.png}}}
+\end{figure}
+\begin{figure}
+  \centering
+  \mbox{\subfigure[No. of steps taken = 20 with probability of moving a step right = 0.7.]{\includegraphics[scale = 0.35]{Q1/1.2/Q1.2 _n = 20_p = 0.7.png}}\quad
+  \subfigure[No. of steps taken = 24 with probability of moving a step right = 0.7.]{\includegraphics[scale = 0.35]{Q1/1.2/Q1.2 _n = 24_p = 0.7.png}}}
+\end{figure}
+
+Histograms produced by the above code for expected final positions of objects against frequency, where $n$ is the number of steps taken and $p$ is the probability of the object moving one step to the right.\\
+\\
+Histograms $(d)$ and $(e)$ have the same value of $p$ and varying number of steps $n$. \\
+Both histograms appear to follow a normal distribution, with $(d)$ having a mean of $3.267$ and a variance of $0.233$ and $(e)$ having a mean of $3.466$ and a variance of $0.367$. Again, increasing the number of steps has not had a significant effect on the mean but did increase the variance.\\ \\
+Histograms $(f)$ and $(g)$ have the same number of steps $n$ respectively as $(d)$ and $(e)$ and varying values of $p$. 
+They also appear to follow a normal distribution, with $(f)$ having a mean of $8.462$ and a variance of $0.559$ and $(g)$ having a mean of $10.187$ and a variance of $0.668$. Increasing $p$ appears to have increased the mean and variance, but the mean has increased more significantly. \\ \\
+Additionally, due to the added constraint in this part, we see that no expected value for the final position is negative.
 
 \pagebreak
 %--------------------------------  1.3  ------------------------------------
 \subsection*{1.3}
-Function implementation in Python:
-\lstinputlisting[firstline=65,lastline=79,language=python]{codes/q1.py}
-Calling the function for several iterations to get multiple expected values:
-\lstinputlisting[firstline=81,lastline=104,language=python]{codes/q1.py}
+In this part, we are required to find the number of steps taken by two objects initialized at different points, and moving randomly to meet. The following function takes in the initial position of both objects $pos1$ and $pos2$ as well as their probabilities $p1$ and $p2$, generates random numbers and determines the number of steps taken to meet.
+\lstinputlisting[firstline=61,lastline=75,language=python]{code/q1.py}
+The following function uses the \texttt{stepsToMeet} function and calculates 25 expected values using 25 outcomes based on the values of $pos1, pos2, p1$ and $p2$. It then plots a histogram of these expected values as well.
+\lstinputlisting[firstline=77,lastline=97,language=python]{code/q1.py}
+\pagebreak
+Histograms produced by the above code for expected number of steps taken for two objects walking randomly to meet, against frequency:\\
+
+\begin{center}
+  \includegraphics[scale = 0.5]{Q1/1.3/Q1.3 _p1 = 0.6_p2 = 0.3_pos1 = -2_pos2 = 4.png}
+\end{center}
+
+The above histogram shows that the expected number of steps to meet for two objects follows a normal distribution of mean $10.09$ and variance $1.94$ when they begin 6 steps apart with the given probabilities. \\
+\begin{center}\includegraphics[scale = 0.5]{Q1/1.3/Q1.3 _p1 = 0.7_p2 = 0.3_pos1 = -4_pos2 = 4.png}\end{center}
+The above histogram shows that the expected number of steps to meet for two objects follows a normal distribution of mean $9.90$ and variance $1.16$ when they begin 8 steps apart with the given probabilities. \\
+
 \newpage
 %--------------------------------  2.*  ------------------------------------
 \section*{Q2: Simulating Distributions}
@@ -146,7 +174,7 @@ Calling the function for several iterations to get multiple expected values:
         We can affirm that we have reached the right deduction by looking at line 12 of the code.
         So, the distribution of y is :
         $$f_Y(y)=\frac{1}{y^2} for y \geq 1$$
-         \lstinputlisting[firstline=23,lastline=25,language=python]{codes/Q2.py}
+         \lstinputlisting[firstline=23,lastline=25,language=python]{code/Q2.py}
         Lines 5-7 is simply trying to implement a cutoff for values of y greater 30 as values starting to get more smaller. Given that we taken small amount of bins, the average value of each bar becomes negligible and is not visible in the graph. Therefore we cut it down to 30 so that the approximation is more accurate.
      \begin{center}
       \begin{tabular}{cc}
@@ -173,7 +201,7 @@ Calling the function for several iterations to get multiple expected values:
          $$ y^2=\frac{1}{2(1-x)}$$
          $$ y=\sqrt{\frac{1}{2(1-x)} }$$
          Code:
-         \lstinputlisting[firstline=35,lastline=48,language=python]{codes/Q2.py}
+         \lstinputlisting[firstline=35,lastline=48,language=python]{code/Q2.py}
          The output of simulation for this y:
          \begin{center}
           \begin{tabular}{cc}
@@ -183,7 +211,7 @@ Calling the function for several iterations to get multiple expected values:
         for y \geq \sqrt{\frac{1}{2}}$} 
       \end{center}
       For the simulation of expected values, the same code used for the above function ran for 10000 times and each run would take the mean of y :
-         \lstinputlisting[firstline=51,lastline=62,language=python]{codes/Q2.py}
+         \lstinputlisting[firstline=51,lastline=62,language=python]{code/Q2.py}
       The output of this simulation:
          \begin{center}
         \begin{tabular}{cc}
@@ -193,7 +221,7 @@ Calling the function for several iterations to get multiple expected values:
       for y \geq \sqrt{\frac{1}{2}}$} 
     \end{center}
 
-
+\pagebreak
 %--------------------------------  3.*  ------------------------------------
 \section*{Q3. Picking a Random Point Correctly}
 
@@ -216,7 +244,7 @@ Calling the function for several iterations to get multiple expected values:
   The resulting graph has very dense distribution towards the center.
 \end{framed}
 
-\lstinputlisting[firstline=1,lastline=48,language=python]{codes/Q3(1).py}
+\lstinputlisting[firstline=1,lastline=48,language=python]{code/Q3(1).py}
 
 \begin{figure}[h]
   \centering
@@ -237,7 +265,7 @@ Calling the function for several iterations to get multiple expected values:
     \item \emph{gen\_points(R)}: The main function iterates 1000 times and calls \emph{random\_point(R)}. Then it checks the condition that if the distance of the point $(x,y)$ is within the radius $R$, it would append the points to their respective lists, else the counter will be decremented by 1 and the point will not be added to the list. Then the lists $X$ and $Y$ are passed to the plot functions for display.
   \end{itemize}
 \end{framed}
-\lstinputlisting[firstline=1,lastline=46,language=python]{codes/Q3(2).py}
+\lstinputlisting[firstline=1,lastline=46,language=python]{code/Q3(2).py}
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.7]{Q3/Q3(2).png}
@@ -273,14 +301,13 @@ Calling the function for several iterations to get multiple expected values:
       Then it draws outer and inner circles of the given radius R and $\frac{R}{2}$ respectively, and then plot the points stored in the lists X and Y.
   \end{itemize}
 \end{framed}
-\lstinputlisting[firstline=1,lastline=53,language=python]{codes/Q3(3).py}
+\lstinputlisting[firstline=1,lastline=53,language=python]{code/Q3(3).py}
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.7]{Q3/Q3(3).png}
 \end{figure}
-\newpage
-
+\pagebreak
 \section*{Q4. Saying Random is not enough}
 
 %--------------------------------  4.1  ------------------------------------
@@ -298,7 +325,7 @@ Calling the function for several iterations to get multiple expected values:
             \item \emph{find\_cords1(R)}: The function takes radius R as input, then draw the histogram as the output. It iterates 1000 times, calls \emph{cord(R)} for each iteration and append the result in \emph{cord\_len}. The bin value is set to be 50 as it provides a good threshold for the 1000 values. Then it plots the graph using matplotlib.
         \end{enumerate}
     \end{framed}
-    \lstinputlisting[firstline=5,lastline=34,language=python]{codes/Q4.py}
+    \lstinputlisting[firstline=5,lastline=34,language=python]{code/Q4.py}
     \begin{figure}[ht]
         \caption{Histogram of 4.1}
         \centering
@@ -331,7 +358,7 @@ Calling the function for several iterations to get multiple expected values:
         \end{enumerate}
         We run this program with radius 30. The resulting histogram seems to be an exponentially rising graph, with a flat start.
     \end{framed}
-    \lstinputlisting[firstline=35,lastline=73,language=python]{codes/Q4.py}
+    \lstinputlisting[firstline=35,lastline=73,language=python]{code/Q4.py}
     \begin{figure}[h]
         \caption{Histogram of 4.2}
         \centering
@@ -353,7 +380,7 @@ Calling the function for several iterations to get multiple expected values:
         \end{enumerate}
         We run this program for radius 20. The histogram looks quite linear.
     \end{framed}
-    \lstinputlisting[firstline=74,lastline=119,language=python]{codes/Q4.py}
+    \lstinputlisting[firstline=74,lastline=119,language=python]{code/Q4.py}
     \begin{figure}[h]
         \caption{Histogram of 4.3}
         \centering
@@ -365,4 +392,70 @@ Calling the function for several iterations to get multiple expected values:
     \begin{framed}
         Out of all the distributions, I think the third approach (part 4.3) is the best to take. Its graph seems somewhat linear, which will ensure a little uniformity. As the previous graphs showed dense distribution towards the center of the circle, i.e. near the diameter, however in 4.3, the graph seems more distributed.
     \end{framed}
+
+% ------------------------------------------------- 5 -------------------------------------------------------------------
+\pagebreak
+\section*{Q5: Hypothesis Testing}
+\subsection*{5.1}
+\textbf{This question requires us to use hypothesis testing to determine whether the null hypothesis that a coin is fair is true or not. }\\
+The following function implements the simulation of a fair coin:
+\lstinputlisting[firstline=10,lastline=12,language=python]{code/q5.py}
+This function then uses the above function to simulate 10 coin tosses 100 times and finds the expected number of times the null hypothesis is rejected for each iteration:
+\lstinputlisting[firstline=14,lastline=35, language=python]{code/q5.py}
+Histogram of expected values:
+\begin{center}
+  \includegraphics[scale = 0.5]{Q5/Q5.1.png}
+\end{center}
+Probability we will reject the null hypothesis even though it is true:\\
+\emph{Simulation-wise}: According to the mean of the expected values, the probability is $2.3\%$.\\
+\emph{Mathematically}: We reject the null hypothesis if the probability of the outcomes is below the threshold. Since the probability of the outcomes being accepted is 0.95 and the probability of them being rejected is 0.05, the probability that we reject the null hypothesis even though it is true is also 0.05 which is equal to the threshold.
+
+\subsection*{5.2.1}
+\textbf{This question requires us to use hypothesis testing to determine the validity of the null hypothesis that the mean length of fish in a lake is 23.}\footnote{The fish.pyc file we received was causing errors so we used the new fish.py file provided by a TA}\\
+The following function conducts a single hypothesis test by taking a sample of $30$ fish and calculating the mean and standard deviation of their lengths to check the following condition to accept or reject the null hypothesis:
+\[P(|S - u_0| \geq a) < 0.05\]
+The function returns $1$ if the hypothesis is rejected, and $0$ if it is accepted.
+\lstinputlisting[firstline=41,lastline=53,language=python]{code/q5.py}
+The following function performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=56,lastline=72,language=python]{code/q5.py}
+Histogram of expected values of the null hypothesis being rejected:
+\begin{center}
+  \includegraphics[scale = 0.5]{Q5/Q5.2.1.png}
+\end{center}
+The histogram follows a normal disttribution with mean 0.951 and variance 0.001. According to this, the null hypothesis is rejected $95\%$ of the times so it is false. A single hypothesis test may have been sufficient to accept or reject the null hypothesis as the variance is very low.
+
+\subsection*{5.2.2}
+The following function calls the \texttt{hypothesis\_test()} function defined in $5.2.1$ using the same value for the population mean $u_0$ $(23)$ but passing a value of 70 for the sample size $n$. It then performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=75,lastline=91,language=python]{code/q5.py}
+Histogram of expected values of the null hypothesis being rejected:
+\begin{center}
+  \includegraphics[scale = 0.5]{Q5/Q5.2.2.png}
+\end{center}
+Increasing the value of $n$ made the variance become $0$ where it was previously 0.001. In other words, the null hypothesis is rejected $100\%$ of the times. A single hypothesis test may have been sufficient to reject the null hypothesis in this case as there is no variance in the outcome.
+
+\subsection*{5.2.3}
+\textbf{Determining the least value of $n$ to ensure that the null hypothesis is not wrongly rejected more than 10 percent of the time using simulations.}\\ 
+
+The following is a function that returns the length of a fish following a normal distribution with mean 23 and standard deviation 3.
+\lstinputlisting[firstline=96,lastline=97,language=python]{code/q5.py}
+
+In order to calculate the expected number of times the null hypothesis is rejected, we use the following function which takes in the value of the population mean $u_0$ and sample size $n$ and uses the \texttt{my\_fish()} function defined above to create the sample for the test. It then conducts the test itself the same way as the previous parts but with a threshold of 0.1.
+\lstinputlisting[firstline=99,lastline=111,language=python]{code/q5.py}
+
+We then use the following function which calls the \texttt{testing()} function, performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=113,lastline=130,language=python]{code/q5.py}
+\pagebreak
+Conducting simulations with various values of $n$, we achieve the above histograms.
+\begin{figure}
+  \centering
+  \mbox{\subfigure{\includegraphics[scale = 0.35]{Q5/Q5.2.3_85.png}}\quad
+  \subfigure{\includegraphics[scale = 0.35]{Q5/Q5.2.3_90.png}}}
+\end{figure}
+\begin{figure}
+  \centering
+  \mbox{\subfigure{\includegraphics[scale = 0.35]{Q5/Q5.2.3_95(1).png}}\quad
+  \subfigure{\includegraphics[scale = 0.35]{Q5/Q5.2.3_95(10).png}}}
+\end{figure}
+In order to determine the least value of $n$ to ensure that the null hypothesis is not wrongly rejected more than 10 percent of the times, we want a value of $n$ that gives a mean of 0.1. According to the simulations, the value of $n$ satisfying this condition is \textbf{90}. 
+
 \end{document}
