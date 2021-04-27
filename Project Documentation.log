@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.2.4)  23 APR 2021 01:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.2.4)  27 APR 2021 01:39
 entering extended mode
-**d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4_doc.tex
-(d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4_doc.tex
+**"d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Project Documentation.tex"
+("d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Project Documentation.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/exam\exam.cls"
 Document Class: exam 2017/12/17 Version 2.603 by Philip Hirschhorn
@@ -486,23 +486,23 @@ File: tikzlibrarymatrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count330
 \l__pdf_internal_box=\box63
-) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4_doc.aux)
-\openout1 = `Q4_doc.aux'.
+) ("d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.aux")
+\openout1 = `"Project Documentation.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -558,68 +558,156 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 ) ABD: EveryShipout initializing macros
 \c@lstlisting=\count337
- ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+ ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+ ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 77.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
+) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
 consecutive:
-
-Overfull \hbox (0.29399pt too wide) in paragraph at lines 5--6
-[][][][] 
- []
-
+) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
+consecutive:
 )
-<Q4/Q4(1).png, id=4, 462.528pt x 346.896pt>
-File: Q4/Q4(1).png Graphic file (type png)
-<use Q4/Q4(1).png>
-Package pdftex.def Info: Q4/Q4(1).png  used on input line 73.
-(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
- (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
-consecutive:
-
-Overfull \hbox (0.29399pt too wide) in paragraph at lines 31--32
+Overfull \hbox (10.4916pt too wide) in paragraph at lines 33--79
 [][][][] 
  []
 
 [1
 
-{C:/Users/tas18/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(1).png>])
-<Q4/Q4(2).png, id=16, 462.528pt x 346.896pt>
-File: Q4/Q4(2).png Graphic file (type png)
-<use Q4/Q4(2).png>
-Package pdftex.def Info: Q4/Q4(2).png  used on input line 85.
-(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
- (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
+{C:/Users/tas18/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<Q1_histograms/1.1/q1_n = 10_ p = 0.5.png, id=15, 722.7pt x 505.89pt>
+File: Q1_histograms/1.1/q1_n = 10_ p = 0.5.png Graphic file (type png)
+<use Q1_histograms/1.1/q1_n = 10_ p = 0.5.png>
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.5.png  used on input line 82.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+<Q1_histograms/1.1/q1_n = 18_ p = 0.5.png, id=17, 722.7pt x 505.89pt>
+File: Q1_histograms/1.1/q1_n = 18_ p = 0.5.png Graphic file (type png)
+<use Q1_histograms/1.1/q1_n = 18_ p = 0.5.png>
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 18_ p = 0.5.png  used on input line 84.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+<Q1_histograms/1.1/q1_n = 10_ p = 0.7.png, id=18, 722.7pt x 505.89pt>
+File: Q1_histograms/1.1/q1_n = 10_ p = 0.7.png Graphic file (type png)
+<use Q1_histograms/1.1/q1_n = 10_ p = 0.7.png>
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.7.png  used on input line 86.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+ [2 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 10_ p = 0.5.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 18_ p = 0.5.png>] [3 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 10_ p = 0.7.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
 consecutive:
 
-Overfull \hbox (0.29399pt too wide) in paragraph at lines 66--68
+Overfull \hbox (46.1832pt too wide) in paragraph at lines 43--44
 [][][][] 
  []
 
-[2 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(2).png>])
-<Q4/Q4(3).png, id=21, 462.528pt x 346.896pt>
-File: Q4/Q4(3).png Graphic file (type png)
-<use Q4/Q4(3).png>
-Package pdftex.def Info: Q4/Q4(3).png  used on input line 96.
+) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
+consecutive:
+
+Overfull \hbox (10.4916pt too wide) in paragraph at lines 60--61
+[][][][] 
+ []
+
+) [4]
+<Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png, id=33, 722.7pt x 505.89pt>
+File: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png Graphic file (type png)
+<use Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png>
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png  used on input line 97.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+<Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png, id=34, 722.7pt x 505.89pt>
+File: Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png Graphic file (type png)
+<use Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png>
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png  used on input line 99.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+<Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png, id=35, 722.7pt x 505.89pt>
+File: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png Graphic file (type png)
+<use Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png>
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png  used on input line 101.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+<Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png, id=36, 722.7pt x 505.89pt>
+File: Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png Graphic file (type png)
+<use Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png>
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png  used on input line 103.
+(pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
+ [5 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png>] [6 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
+consecutive:
+) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
+consecutive:
+
+Overfull \hbox (188.94962pt too wide) in paragraph at lines 98--99
+[][][][] 
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[7] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(1).py)
+<Q3/Q3(1).png, id=53, 462.528pt x 346.896pt>
+File: Q3/Q3(1).png Graphic file (type png)
+<use Q3/Q3(1).png>
+Package pdftex.def Info: Q3/Q3(1).png  used on input line 145.
 (pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
- [3 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(3).png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+[8] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(2).py [9 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(1).png>])
+<Q3/Q3(2).png, id=64, 462.528pt x 346.896pt>
+File: Q3/Q3(2).png Graphic file (type png)
+<use Q3/Q3(2).png>
+Package pdftex.def Info: Q3/Q3(2).png  used on input line 169.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(3).py [10 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(2).png>])
+<Q3/Q3(3).png, id=71, 462.528pt x 346.896pt>
+File: Q3/Q3(3).png Graphic file (type png)
+<use Q3/Q3(3).png>
+Package pdftex.def Info: Q3/Q3(3).png  used on input line 197.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(3).png>]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
-(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4_doc.aux) ) 
+("d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.aux") ) 
 Here is how much of TeX's memory you used:
- 17274 strings out of 480898
- 319672 string characters out of 2898310
- 855340 words of memory out of 3000000
- 32855 multiletter control sequences out of 15000+200000
- 538340 words of font info for 33 fonts, out of 3000000 for 9000
+ 17438 strings out of 480898
+ 324071 string characters out of 2898310
+ 933352 words of memory out of 3000000
+ 32971 multiletter control sequences out of 15000+200000
+ 547241 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,479b,1799s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4_doc.pdf (3 pages, 143662 bytes).
+ 60i,13n,60p,534b,1817s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on "d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.pdf" (12 pages, 466924 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

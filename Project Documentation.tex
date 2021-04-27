@@ -79,11 +79,11 @@ Calling the function for several iterations to get multiple expected values:
 \lstinputlisting[firstline=16,lastline=33,language=python]{q1.py}
 \pagebreak
 Histograms produced by the above code for various combinations of $n$ and $p$:\\
-\includegraphics[scale = 0.5]{Q1_histograms/q1_n = 10_ p = 0.5.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.1/q1_n = 10_ p = 0.5.png}\\
 The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1_histograms/q1_n = 18_ p = 0.5.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.1/q1_n = 18_ p = 0.5.png}\\
 The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1_histograms/q1_n = 10_ p = 0.7.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.1/q1_n = 10_ p = 0.7.png}\\
 The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
 \pagebreak
 %--------------------------------  1.2  ------------------------------------
@@ -94,13 +94,13 @@ Calling the function for several iterations to get multiple expected values:
 \lstinputlisting[firstline=46,lastline=63,language=python]{q1.py}
 \pagebreak
 Histograms produced by the above code for various combinations of $n$ and $p$:\\
-\includegraphics[scale = 0.5]{Q1_histograms/Q1.2 _n = 20_p = 0.5.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png}\\
 The above histogram appears to follow a normal distribution with a mean of $3.267$ and variance of $0.233$.\\
-\includegraphics[scale = 0.5]{Q1_histograms/Q1.2 _n = 24_p = 0.5.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png}\\
 The above histogram shows that...\\
-\includegraphics[scale = 0.5]{Q1_histograms/Q1.2 _n = 20_p = 0.7.png}\\
+\includegraphics[scale = 0.5]{Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png}\\
 The above histogram shows that...\\
-\includegraphics[scale = 0.5]{Q1_histograms/Q1.2 _n = 23_p = 0.7.png}
+\includegraphics[scale = 0.5]{Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png}
 
 \pagebreak
 %--------------------------------  1.3  ------------------------------------
@@ -122,19 +122,27 @@ Calling the function for several iterations to get multiple expected values:
 \begin{framed}
   For part $3.1$, we followed the method specified in the question. The program takes radius as an input from the user, and passes it to \emph{gen\_points(R)} to display the graph.
   \begin{itemize}
-    \item \emph{polar\_to\_cart(r,t)}: This function takes the polar cordinates $(r \text{and} \theta)$ and converts them to their cartesian equivalent. It is called from \emph{polar\_point(R)}, to return the cartesian cordinates.
-    \item \emph{polar\_point(R)}: The function is responsible for generating a random point in polar cordinates, and returns the converted cartesian cordinates.
+    \item \emph{polar\_to\_cart(r,t)}: This function takes the polar cordinates $(r \text{and} \theta)$ and converts them to their cartesian equivalent. It is called from \emph{random\_point(R)}, to return the cartesian cordinates.\\
+      \begin{align*}
+        x &= r\cos(\theta)\\
+        y &= r\sin(\theta)
+      \end{align*}
+    \item \emph{random\_point(R)}: The function is responsible for generating a random point in polar cordinates, and returns the converted cartesian cordinates.\\
+      \begin{align*}
+        R = random.uniform(0,radius)\\
+        \theta = random.uniform(0,360)(\frac{\pi}{180})
+      \end{align*}
     \item \emph{gen\_points(R)}: This is the main function which runs 1000 iterations, and calls \emph{random\_point(R)}, stores the result in the separate lists for $X$ and $Y$ cordinates. Then the lists are passed to the plot functions, to graph the points.
 
   \end{itemize}
 \end{framed}
 
-\lstinputlisting[firstline=1,lastline=48,language=python]{Prob-Project/Q3/Q3(1).py}
+\lstinputlisting[firstline=1,lastline=48,language=python]{Q3/Q3(1).py}
 
 \begin{figure}[h]
   \caption{radius = 100, variance of x = 1626.2176657086331}
   \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(1).png}
+  \includegraphics[scale=0.7]{Q3/Q3(1).png}
 \end{figure}
 
 %--------------------------------  3.2  ------------------------------------
@@ -142,18 +150,24 @@ Calling the function for several iterations to get multiple expected values:
 \begin{framed}
   \indent In part $3.2$, we calculated the cartesian cordinates directly from the specified radius R. If the random point lied farther from the distance from the origin, it will be discarded and the program will find a new point.
   \begin{itemize}
-    \item \emph{random\_point(R)}: This function finds random points for $x$ and $y$ cordinates between the range $-R$ and $R$. It returns the tuple with cartesian cordinates.
-    \item \emph{dist\_from\_origin(x,y)}: The function find and return the distance of the point from the origin.
+    \item \emph{random\_point(R)}: This function finds random points for $x$ and $y$ cordinates between the range $-R$ and $R$. It returns the tuple with cartesian cordinates.\\
+      \begin{align*}
+        x=random.uniform(-R,R)\\
+        y=random.uniform(-R,R)
+      \end{align*}
+    \item \emph{dist\_from\_origin(x,y)}: The function find and return the distance of the point from the origin.\\
+      \begin{align*}
+        dist=\sqrt{x^2+y^2}
+      \end{align*}
     \item \emph{gen\_points(R)}: The main function iterates 1000 times and calls \emph{random\_point(R)}. Then it checks the condition that if the distance of the point $(x,y)$ is within the radius $R$, it would append the points to their respective lists, else the counter will be decremented by 1 and the point will not be added to the list. Then the lists $X$ and $Y$ are passed to the plot functions for display.
   \end{itemize}
 \end{framed}
-\lstinputlisting[firstline=1,lastline=46,language=python]{Prob-Project/Q3/Q3(2).py}
+\lstinputlisting[firstline=1,lastline=46,language=python]{Q3/Q3(2).py}
 \begin{figure}[h]
   \caption{radius = 100, variance of x = 2533.130556271337}
   \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(2).png}
+  \includegraphics[scale=0.7]{Q3/Q3(2).png}
 \end{figure}
-
 
 %--------------------------------  3.3  ------------------------------------
 \subsection*{3.3}
@@ -161,16 +175,25 @@ Calling the function for several iterations to get multiple expected values:
   \indent In part $3.3$, we had to modify the function for polar cordinates, such that the graph it made was uniformly distributed, similar to part $3.2$.
 
   \begin{itemize}
-    \item \emph{random\_point(R)}:
-    \item \emph{polar\_to\_cart(cord)}:
-    \item \emph{gen\_points(R)}:
+    \item \emph{random\_point(R)}: The function finds random radius R and theta $\theta$. It uses the function for R derived above. 
+      \begin{align*}
+        R &= radius\sqrt[3]{(random.uniform(0,1))}\\
+        \theta &= random.uniform(0,360)(\frac{\pi}{180})
+      \end{align*}
+    \item \emph{polar\_to\_cart(cord)}: This is the same function that we used in part 3.1. The function takes radius r and angle t as the input, and returns the cartesian cordinates. We use the following formulae to derive the cordinates,\\
+      \begin{align*}
+        x &= r\cos(t)\\
+        y &= r\sin(t)
+      \end{align*}
+    \item \emph{gen\_points(R)}: Like previous parts, this function makes 1000 iterations, and call \emph{random\_point(R)} for each of them, then stores the returned values in their respective lists X and Y.\\
+      Then it draws outer and inner circles of the given radius R and $\frac{R}{2}$ respectively, and then plot the points stored in the lists X and Y.
   \end{itemize}
 \end{framed}
-\lstinputlisting[firstline=1,lastline=53,language=python]{Prob-Project/Q3/Q3(3).py}
+\lstinputlisting[firstline=1,lastline=53,language=python]{Q3/Q3(3).py}
 
 \begin{figure}[h]
   \caption{radius = 2, variance of x = 1.017564829759483}
   \centering
-  \includegraphics[scale=0.7]{Prob-Project/Q3/Q3(3).png}
+  \includegraphics[scale=0.7]{Q3/Q3(3).png}
 \end{figure}
 \end{document}
