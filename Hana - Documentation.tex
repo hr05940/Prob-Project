@@ -160,4 +160,27 @@ Probability we will reject the null hypothesis even though it is true:\\
 \emph{Simulation-wise}: According to the mean of the expected values, the probability is $2.3\%$.\\
 \emph{Mathematically}: We reject the null hypothesis if the probability of the outcomes is below the threshold. Since the probability of the outcomes being accepted is 0.95 and the probability of them being rejected is 0.05, the probability that we reject the null hypothesis even though it is true is also 0.05 which is equal to the threshold.
 
+\subsection*{5.2.1}
+The following function conducts a single hypothesis test by taking a sample of $30$ fish and calculating the mean and standard deviation of their lengths to check the following condition to accept or reject the null hypothesis:
+\[P(|S - u_0| \geq a) < 0.05\]
+The function returns $1$ if the hypothesis is rejected, and $0$ if it is accepted.
+\lstinputlisting[firstline=41,lastline=53,language=python]{q5.py}
+The following function performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=56,lastline=72,language=python]{q5.py}
+Histogram of expected values of the null hypothesis being rejected:
+\begin{center}
+  \includegraphics[scale = 0.5]{Q5_histograms/Q5.2.1.png}
+\end{center}
+The histogram follows a normal disttribution with mean 0.951 and variance 0.001. According to this, the null hypothesis is rejected $95\%$ of the times so it is false. A single hypothesis test may have been sufficient to accept or reject the null hypothesis as the variance is very low.
+
+\subsection*{5.2.2}
+The following function calls the \texttt{hypothesis\_test()} function defined in $5.2.1$ using the same value for the population mean $u_0$ $(23)$ but passing a value of 70 for the sample size $n$. It then performs 50 experiments and uses the average of their outcome to calculate a single expected value. It repeats this for 100 iterations and plots a histogram of the expected values.
+\lstinputlisting[firstline=75,lastline=91,language=python]{q5.py}
+Histogram of expected values of the null hypothesis being rejected:
+\begin{center}
+  \includegraphics[scale = 0.5]{Q5_histograms/Q5.2.2.png}
+\end{center}
+Increasing the value of $n$ made the variance become $0$ where it was previously 0.001. In other words, the null hypothesis is rejected $100\%$ of the times. A single hypothesis test may have been sufficient to reject the null hypothesis in this case as there is no variance in the outcome.
+
+
 \end{document} 

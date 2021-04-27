@@ -54,28 +54,27 @@ def hypothesis_test(u_0, n):
 
 
 def experiments():
-    u_0 = 23
-    n = 30
+    u_0 = 23 #population mean 
+    n = 30 #sample size
     expected = []
-    for j in range(100):
+    for j in range(100): #getting 100 expected values
         outcomes = []
-        for i in range(50):
+        for i in range(50): #conducting 50 hypothesis tests
             outcomes.append(hypothesis_test(u_0,n))
-        expected.append(sum(outcomes)/50)
-    #plotting histogram
+        expected.append(sum(outcomes)/50) #calculating one expected value from the 50 tests
+    #plotting histogram of expected values
     fig, ax = plt.subplots(figsize =(10, 7))
-    a = np.arange(0.8,1.1,0.015)
-    ax.hist(expected, bins = a)
+    ax.hist(expected, width = 0.04)
     ax.set_xlabel('Times the null hypothesis is rejected')
     ax.set_ylabel('Frequency')
     plt.title('Population Mean: '+str(u_0)+', Sample Size: '+str(n)+'\n Mean: '+str(round(statistics.mean(expected),3))+', Variance: '+str(round(statistics.variance(expected),3)))
-    plt.savefig("Q5_histograms/Q5.2.1(3).png")
+    plt.savefig("Q5_histograms/Q5.2.1.png")
     plt.show()
 
 
-def experiments_2():
-    u_0 = 23
-    n = 70
+def experiments_updated():
+    u_0 = 23 #population mean
+    n = 70 #sample size
     expected = []
     for j in range(100):
         outcomes = []
@@ -84,14 +83,14 @@ def experiments_2():
         expected.append(sum(outcomes)/50)
     #plotting histogram
     fig, ax = plt.subplots(figsize =(10, 7))
-    ax.hist(expected, bins = [0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8])
+    ax.hist(expected, width = 0.1)
     ax.set_xlabel('Times the null hypothesis is rejected')
     ax.set_ylabel('Frequency')
     plt.title('Population Mean: '+str(u_0)+', Sample Size: '+str(n)+'\n Mean: '+str(round(statistics.mean(expected),3))+', Variance: '+str(round(statistics.variance(expected),3)))
     plt.savefig("Q5_histograms/Q5.2.2.png")
     plt.show()
 
-# experiments()
+experiments_updated()
 
 # ------------------------------------------------- 5.2.3---------------------------------------------
 def my_fish():
