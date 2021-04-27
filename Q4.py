@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math as m
+import random
 
 # 4.1 -------------------------------------------------------------------------------------------
 def random_theta():
@@ -22,9 +23,13 @@ def find_cords1(R):
     for _ in range(I):
         cord_len.append(cord(R))
 
-    plt.hist(cord_len, bins = range(0,R))
+    #Finding bins
+    bin_val = random.randint(40,60)
+
+    plt.hist(cord_len, bins = bin_val,density=True)
     plt.title("Histogram of 4.1")
-    plt.ylabel("Cord Length")
+    plt.ylabel("Proportion of values")
+    plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(1).png")
     plt.show()
 
@@ -56,10 +61,14 @@ def find_cords2(R):
 
     for _ in range(I):
         cord_len.append(random_cord(R))
+
+    #finding the bin size
+    bin_val = random.randint(40,60)
     
-    plt.hist(cord_len, bins = range(0,R))
+    plt.hist(cord_len, bins = bin_val,density=True)
     plt.title("Histogram of 4.2")
-    plt.ylabel("Cord Length")
+    plt.ylabel("Proportion of values")
+    plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(2).png")
     plt.show()
 
@@ -99,13 +108,17 @@ def find_cords3(R):
         else:
             a = a - 1
     
-    plt.hist(cord_len, bins = range(0,R))
+    #finding the bin sizes
+    bin_val = random.randint(40,60)
+    
+    plt.hist(cord_len, bins = bin_val,density=True)
     plt.title("Histogram of 4.3")
-    plt.ylabel("Cord Length")
+    plt.ylabel("Proportion of values")
+    plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(3).png")
     plt.show()
 
 
 find_cords1(20)
-find_cords2(20)
-find_cords3(20)
+#find_cords2(20)
+#find_cords3(20)

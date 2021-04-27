@@ -64,7 +64,16 @@
 %--------------------------------  4.1  ------------------------------------
     \subsection*{4.1}
     \begin{framed}
-
+        \begin{enumerate}
+            \item \emph{random\_theta()}: The function finds random $\theta_1$ and $\theta_2$. $\theta$ is chosen randomly from degrees($\phi$) and then converted to radians.\\
+                    \begin{align*}
+                        \theta_1 &= \phi_1 . \frac{\pi}{180}\\
+                        \theta_2 &= \phi_2 . \frac{\pi}{180}
+                    \end{align*}
+            \item \emph{cord(R)}: The function takes the radius as the input and returns length of the cord between $\theta_1$ and $\theta_2$. It first calls \emph{random\_theta()}, and find the absolute value of their difference ($\theta=|\theta_1 - \theta_2|$). Then the length of the cord in calculated using the following formuls,\\
+                    $$\text{cord length}=2R.\sin(\theta/2)$$
+            \item \emph{find\_cords1(R)}: The function takes radius R as input, then draw the histogram as the output. It iterates 1000 times, calls \emph{cord(R)} for each iteration and append the result in \emph{cord\_len}. Then we calculate the value of appropriate bins for the histogram, and then plot it using matplotlib.
+        \end{enumerate}
     \end{framed}
     \lstinputlisting[firstline=4,lastline=30,language=python]{Q4.py}
     \begin{figure}[h]

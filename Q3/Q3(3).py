@@ -2,12 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math as m
 
-def random_point(radius):
+def random_point(R):
 
-    #R=radius, theta=angle
-    R = radius*(np.random.uniform(0,1))**(1/3)     #random R in range 0-R
+    #r=radius, theta=angle
+    r = R*m.sqrt(np.random.uniform(0,1))     #random r using R(CDF)**1/2
     theta = np.random.uniform(0, 360)*(m.pi/180)   #random theta between 0-360 degrees
-    return(polar_to_cart(R,theta))
+    return(polar_to_cart(r,theta))
 
 def polar_to_cart(r,t):
 
@@ -15,38 +15,40 @@ def polar_to_cart(r,t):
     y = r * np.sin(t)  #y = rsin(theta)
     return((x,y))
 
-def gen_points(l_radius):
+def gen_points(R):
 
     I = 1000     #iterations
     X = []    #list for x axis
     Y = []    #list for y axis
 
     #generating the lists for X and Y
-    for p in range(I):
-        point = random_point(l_radius)
+    for _ in range(I):
+        point = random_point(R)
         X.append(point[0])
         Y.append(point[1])
 
-    print("The variance on the x-axis is " + str(np.var(X)))    #variance of x
-
-    #Drawing the circle
-    #Outer Circle
+    """Drawing the circles and plotting the points"""
+    
+    #Outer Circle of radius R
     fig, axes = plt.subplots()
-    circle1 = plt.Circle((0,0),l_radius,Fill=False,color="red")
+    axes.axis([-R-1,R+1,-R-1,R+1])
+    circle1 = plt.Circle((0,0),R,Fill=False,color="red")
     axes.set_aspect(1)
     axes.add_artist(circle1)
 
-    #inner circle
-    circle2 = plt.Circle((0,0),l_radius/2,Fill=False,color="green")
+    #inner circle of radius R/2
+    circle2 = plt.Circle((0,0),R/2,Fill=False,color="green")
     axes.set_aspect(1)
     axes.add_artist(circle2)
     fig.legend([circle1,circle2],["outer circle", "inner circle"])
 
     #Plotting X and Y
     plt.plot(X,Y,'.',color="blue")
+    fig.suptitle("Graph 3.3", fontsize=13,fontweight='bold')
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
-    plt.title("Graph of 3.3")
+    plt.title("Radius = {}, Variance of x = {}".format(R, np.var(X)),fontsize=10)
+    plt.savefig("Q3/Q3(3).png")
     plt.show()
 
 #Testing
