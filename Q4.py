@@ -11,7 +11,7 @@ def random_theta():
 
 def cord(R):
     angle = random_theta()
-    theta = abs(angle[0] - angle[1])    #theta between the two radius(theta1 and theta2)
+    theta = abs(angle[0] - angle[1])    #theta between the two radii(theta1 and theta2)
     l = 2*R*m.sin(theta/2)  #length of cord = 2rsin(theta/2)
     return(l)
 
@@ -24,10 +24,10 @@ def find_cords1(R):
         cord_len.append(cord(R))
 
     #Finding bins
-    bin_val = random.randint(40,60)
+    bin_val = 50
 
     plt.hist(cord_len, bins = bin_val,density=True)
-    plt.title("Histogram of 4.1")
+    plt.title("Graph 4.1. Radius = {}".format(R),fontsize=10)
     plt.ylabel("Proportion of values")
     plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(1).png")
@@ -63,10 +63,10 @@ def find_cords2(R):
         cord_len.append(random_cord(R))
 
     #finding the bin size
-    bin_val = random.randint(40,60)
+    bin_val = 50
     
     plt.hist(cord_len, bins = bin_val,density=True)
-    plt.title("Histogram of 4.2")
+    plt.title("Graph 4.2. Radius = {}".format(R),fontsize=10)
     plt.ylabel("Proportion of values")
     plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(2).png")
@@ -109,16 +109,16 @@ def find_cords3(R):
             a = a - 1
     
     #finding the bin sizes
-    bin_val = random.randint(40,60)
+    bin_val = 50
     
     plt.hist(cord_len, bins = bin_val,density=True)
-    plt.title("Histogram of 4.3")
+    plt.title("Graph 4.3. Radius = {}".format(R),fontsize=10)
     plt.ylabel("Proportion of values")
     plt.xlabel("Length of the Cords")
     plt.savefig("Q4/Q4(3).png")
     plt.show()
 
-
+#Testing
 find_cords1(20)
-#find_cords2(20)
-#find_cords3(20)
+find_cords2(20)
+find_cords3(20)
