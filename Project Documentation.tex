@@ -9,6 +9,7 @@
 \usepackage[a4paper,margin=2cm]{geometry}
 
 %% Useful packages
+\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -58,7 +59,7 @@
 
 \setlength\FrameSep{4pt}
 \title{Probability \& Statistics\\ Project}
-\author{Hana Ali Rashid, hr05940\\ Tasmiya Malik, tm06183\\ Ifrah Ilyas, Student ID}
+\author{Hana Ali Rashid, hr05940\\ Tasmiya Malik, tm06183\\ Ifrah Ilyas, ii06178}
 \date{\today{}}
 \begin{document}
 \maketitle
@@ -109,9 +110,88 @@ Function implementation in Python:
 \lstinputlisting[firstline=65,lastline=79,language=python]{q1.py}
 Calling the function for several iterations to get multiple expected values:
 \lstinputlisting[firstline=81,lastline=104,language=python]{q1.py}
-
+\newpage
 %--------------------------------  2.*  ------------------------------------
+\section*{Q2: Simulating Distributions}
 
+%--------------------------------  2.1  ------------------------------------
+  \subsection*{2.1}
+        It does accomplish as it plots for a value of x (y is the variable expressed in terms of x) against the pdf $e^{-y}$ such that each bar in the histogram shows the probability for an average value of x. The distrubution plotted is a continuous exponential random variable. The number of bins used are significant for our simulation which will become evident with the following images:
+        \begin{center}
+          \begin{tabular}{cc}
+            \includegraphics[width= 0.35\textwidth]{"Q2/bin5.png"}
+            \includegraphics[width= 0.36\textwidth]{"Q2/bin20.png"}\\
+            \includegraphics[width= 0.375\textwidth]{"Q2/bin100.png"}
+            \includegraphics[width= 0.35\textwidth]{"Q2/bin1000.png"}    
+          \end{tabular}
+          \captionof{figure}{Simulations done with different number of bins} 
+        
+       
+      \end{center} 
+      It is noticeable that, with more number of bins, the accuracy of the results increases. However, it is also interesting to note that using 1000 bins almost gives the same result as 100 bins. Therefore, while simulating we need to take an appropriate values for bins for better approximation and less running time.
+
+%--------------------------------  2.2  ------------------------------------
+  \subsection*{2.2}  
+      In the code we see that :
+         $$y=\frac{1}{1-x} $$
+         With the trick shown, we can back track to find the original distribution.
+        $$1-\frac{1}{y}=x $$
+        We know that the upper bound will be y. For the lower bound we see that:
+        $$\frac{1}{1}-\frac{1}{y}=x $$
+        $$-(\frac{1}{y}-\frac{1}{1})=x $$
+        $$\therefore - \frac{1}{y}\Biggr|^{y}_{1}=x $$
+        Performing derivative on the left hand side:
+        $$\frac{d}{dy} \frac{-1}{y}=(-1)\frac{-1}{y^2}=\frac{1}{y^2}$$
+        $$\therefore \int_{1}^{y} \frac{1}{y^2} dy=x$$
+        We can affirm that we have reached the right deduction by looking at line 12 of the code.
+        So, the distribution of y is :
+        $$f_Y(y)=\frac{1}{y^2} for y \geq 1$$
+         \lstinputlisting[firstline=23,lastline=25,language=python]{Q2.py}
+        Lines 5-7 is simply trying to implement a cutoff for values of y greater 30 as values starting to get more smaller. Given that we taken small amount of bins, the average value of each bar becomes negligible and is not visible in the graph. Therefore we cut it down to 30 so that the approximation is more accurate.
+     \begin{center}
+      \begin{tabular}{cc}
+      \includegraphics[width= 0.4\textwidth]{"Q2/beforeremoving.png"}
+    \end{tabular}
+    \captionof{figure}{Before Removing} 
+    \begin{tabular}{cc}
+      \includegraphics[width= 0.4\textwidth]{"Q2/afterremoving.png"}
+      \includegraphics[width= 0.4\textwidth]{"Q2/afterremoving2.png"} 
+    \end{tabular} 
+    \captionof{figure}{After Removing} 
+    \end{center}
+        
+%--------------------------------  2.3  ------------------------------------
+  \subsection*{2.3}    
+    For, $$f_Y (y) = \frac{1}{y^3}
+        for y \geq \sqrt{\frac{1}{2}}$$
+         $$ P(Y<y)=P(X<x)$$
+         $$\int_{\sqrt{\frac{1}{2}}}^{y} \frac{1}{y^3} dy=x$$
+         $$ \frac{-1}{2y^2} \Biggr|^{y}_{\sqrt{\frac{1}{2}}}=x$$
+         $$ \frac{-1}{2y^2} +\frac{1}{2(\sqrt{\frac{1}{2}})^2}=x$$
+         $$ \frac{-1}{2y^2} +1=x$$
+         $$ \frac{1}{2y^2} =1-x$$
+         $$ y^2=\frac{1}{2(1-x)}$$
+         $$ y=\sqrt{\frac{1}{2(1-x)} }$$
+         Code:
+         \lstinputlisting[firstline=35,lastline=48,language=python]{Q2.py}
+         The output of simulation for this y:
+         \begin{center}
+          \begin{tabular}{cc}
+          \includegraphics[width= 0.4\textwidth]{"Q2/2.3.png"}
+        \end{tabular}
+        \captionof{figure}{Simulation of distribution $f_Y (y) = \frac{1}{y^3}
+        for y \geq \sqrt{\frac{1}{2}}$} 
+      \end{center}
+      For the simulation of expected values, the same code used for the above function ran for 10000 times and each run would take the mean of y :
+         \lstinputlisting[firstline=51,lastline=62,language=python]{Q2.py}
+      The output of this simulation:
+         \begin{center}
+        \begin{tabular}{cc}
+        \includegraphics[width= 0.4\textwidth]{"Q2/expected value.png"}
+      \end{tabular}
+      \captionof{figure}{Simulation of expected values of $fY (y) = \frac{1}{y^3}
+      for y \geq \sqrt{\frac{1}{2}}$} 
+    \end{center}
 
 
 %--------------------------------  3.*  ------------------------------------
