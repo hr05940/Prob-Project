@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.2.4)  27 APR 2021 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.2.4)  27 APR 2021 21:57
 entering extended mode
 **"d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Project Documentation.tex"
 ("d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Project Documentation.tex"
@@ -164,7 +164,23 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen145
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks26
- ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+ ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count288
+\c@continuedfloat=\count289
+) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip74
 
@@ -174,44 +190,44 @@ Package: amstext 2000/06/29 v2.01 AMS text
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen147
+\ex@=\dimen154
 )) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen148
+\pmbraise@=\dimen155
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count288
+\inf@bad=\count290
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count289
-\leftroot@=\count290
+\uproot@=\count291
+\leftroot@=\count292
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count291
-\DOTSCASE@=\count292
+\classnum@=\count293
+\DOTSCASE@=\count294
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box46
 \strutbox@=\box47
-\big@size=\dimen149
+\big@size=\dimen156
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count293
-\c@MaxMatrixCols=\count294
+\macc@depth=\count295
+\c@MaxMatrixCols=\count296
 \dotsspace@=\muskip16
-\c@parentequation=\count295
-\dspbrk@lvl=\count296
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
 \tag@help=\toks28
-\row@=\count297
-\column@=\count298
-\maxfields@=\count299
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
 \andhelp@=\toks29
-\eqnshift@=\dimen150
-\alignsep@=\dimen151
-\tagshift@=\dimen152
-\tagwidth@=\dimen153
-\totwidth@=\dimen154
-\lineht@=\dimen155
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
 \@envbody=\toks30
 \multlinegap=\skip75
 \multlinetaggap=\skip76
@@ -240,8 +256,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen156
-\Gin@req@width=\dimen157
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paralist\paralist.sty"
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip77
@@ -252,14 +268,14 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.sty"
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip81
-\fb@frw=\dimen158
-\fb@frh=\dimen159
-\FrameRule=\dimen160
-\FrameSep=\dimen161
+\fb@frw=\dimen165
+\fb@frh=\dimen166
+\FrameRule=\dimen167
+\FrameSep=\dimen168
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen162
-\pgfutil@tempdimb=\dimen163
+\pgfutil@tempdima=\dimen169
+\pgfutil@tempdimb=\dimen170
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.tex")) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
 \pgfutil@abb=\box48
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
@@ -276,26 +292,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen164
-\pgf@y=\dimen165
-\pgf@xa=\dimen166
-\pgf@ya=\dimen167
-\pgf@xb=\dimen168
-\pgf@yb=\dimen169
-\pgf@xc=\dimen170
-\pgf@yc=\dimen171
-\pgf@xd=\dimen172
-\pgf@yd=\dimen173
+\pgf@x=\dimen171
+\pgf@y=\dimen172
+\pgf@xa=\dimen173
+\pgf@ya=\dimen174
+\pgf@xb=\dimen175
+\pgf@yb=\dimen176
+\pgf@xc=\dimen177
+\pgf@yc=\dimen178
+\pgf@xd=\dimen179
+\pgf@yd=\dimen180
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count300
-\c@pgf@countb=\count301
-\c@pgf@countc=\count302
-\c@pgf@countd=\count303
+\c@pgf@counta=\count302
+\c@pgf@countb=\count303
+\c@pgf@countc=\count304
+\c@pgf@countd=\count305
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count304
+\pgf@sys@id@count=\count306
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -306,8 +322,8 @@ File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count305
-\pgfsyssoftpath@bigbuffer@items=\count306
+\pgfsyssoftpath@smallbuffer@items=\count307
+\pgfsyssoftpath@bigbuffer@items=\count308
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
@@ -328,52 +344,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen174
-\pgfmath@count=\count307
+\pgfmath@dimen=\dimen181
+\pgfmath@count=\count309
 \pgfmath@box=\box49
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
 \pgfmath@stack@operation=\toks42
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex"))) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count308
+\c@pgfmathroundto@lastzeros=\count310
 )) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex") ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen175
-\pgf@picmaxx=\dimen176
-\pgf@picminy=\dimen177
-\pgf@picmaxy=\dimen178
-\pgf@pathminx=\dimen179
-\pgf@pathmaxx=\dimen180
-\pgf@pathminy=\dimen181
-\pgf@pathmaxy=\dimen182
-\pgf@xx=\dimen183
-\pgf@xy=\dimen184
-\pgf@yx=\dimen185
-\pgf@yy=\dimen186
-\pgf@zx=\dimen187
-\pgf@zy=\dimen188
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen189
-\pgf@path@lasty=\dimen190
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen191
-\pgf@shorten@start@additional=\dimen192
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box50
 \pgf@hbox=\box51
 \pgf@layerbox@main=\box52
-\pgf@picture@serial@count=\count309
+\pgf@picture@serial@count=\count311
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen193
+\pgflinewidth=\dimen256
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen194
-\pgf@pt@y=\dimen195
-\pgf@pt@temp=\dimen196
+\pgf@pt@x=\dimen257
+\pgf@pt@y=\dimen258
+\pgf@pt@temp=\dimen259
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
@@ -382,12 +398,12 @@ File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen197
+\pgfarrowsep=\dimen260
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen198
-\pgf@sys@shading@range@num=\count310
-\pgf@shadingcount=\count311
+\pgf@max=\dimen261
+\pgf@sys@shading@range@num=\count312
+\pgf@shadingcount=\count313
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
@@ -408,73 +424,73 @@ File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen199
-\pgf@nodesepend=\dimen256
+\pgf@nodesepstart=\dimen262
+\pgf@nodesepend=\dimen263
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 )) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex")) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty" ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
-\pgffor@iter=\dimen257
-\pgffor@skip=\dimen258
+\pgffor@iter=\dimen264
+\pgffor@skip=\dimen265
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 )) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count312
-\pgfplotmarksize=\dimen259
+\pgf@plot@mark@count=\count314
+\pgfplotmarksize=\dimen266
 )
-\tikz@lastx=\dimen260
-\tikz@lasty=\dimen261
-\tikz@lastxsaved=\dimen262
-\tikz@lastysaved=\dimen263
-\tikz@lastmovetox=\dimen264
-\tikz@lastmovetoy=\dimen265
-\tikzleveldistance=\dimen266
-\tikzsiblingdistance=\dimen267
+\tikz@lastx=\dimen267
+\tikz@lasty=\dimen268
+\tikz@lastxsaved=\dimen269
+\tikz@lastysaved=\dimen270
+\tikz@lastmovetox=\dimen271
+\tikz@lastmovetoy=\dimen272
+\tikzleveldistance=\dimen273
+\tikzsiblingdistance=\dimen274
 \tikz@figbox=\box55
 \tikz@figbox@bg=\box56
 \tikz@tempbox=\box57
 \tikz@tempbox@bg=\box58
-\tikztreelevel=\count313
-\tikznumberofchildren=\count314
-\tikznumberofcurrentchild=\count315
-\tikz@fig@count=\count316
+\tikztreelevel=\count315
+\tikznumberofchildren=\count316
+\tikznumberofcurrentchild=\count317
+\tikz@fig@count=\count318
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count317
-\pgfmatrixcurrentcolumn=\count318
-\pgf@matrix@numberofcolumns=\count319
+\pgfmatrixcurrentrow=\count319
+\pgfmatrixcurrentcolumn=\count320
+\pgf@matrix@numberofcolumns=\count321
 )
-\tikz@expandcount=\count320
+\tikz@expandcount=\count322
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count321
+\c@float@type=\count323
 \float@exts=\toks45
 \float@box=\box59
 \@float@everytoks=\toks46
 \@floatcapt=\box60
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
-\lst@mode=\count322
+\lst@mode=\count324
 \lst@gtempboxa=\box61
 \lst@token=\toks47
-\lst@length=\count323
-\lst@currlwidth=\dimen268
-\lst@column=\count324
-\lst@pos=\count325
-\lst@lostspace=\dimen269
-\lst@width=\dimen270
-\lst@newlines=\count326
-\lst@lineno=\count327
-\lst@maxwidth=\dimen271
+\lst@length=\count325
+\lst@currlwidth=\dimen275
+\lst@column=\count326
+\lst@pos=\count327
+\lst@lostspace=\dimen276
+\lst@width=\dimen277
+\lst@newlines=\count328
+\lst@lineno=\count329
+\lst@maxwidth=\dimen278
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count328
-\lst@skipnumbers=\count329
+\c@lstnumber=\count330
+\lst@skipnumbers=\count331
 \lst@framebox=\box62
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -484,25 +500,25 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 File: tikzlibrarymatrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count330
+\l__kernel_color_stack_int=\count332
 \l__pdf_internal_box=\box63
 ) ("d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.aux")
 \openout1 = `"Project Documentation.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -540,35 +556,39 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
 ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen272
+\scratchcounter=\count333
+\scratchdimen=\dimen279
 \scratchbox=\box64
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count334
+\nofMParguments=\count335
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen273
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen280
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks49
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 ) ABD: EveryShipout initializing macros
-\c@lstlisting=\count337
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+\c@lstlisting=\count339
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 77.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 78.
  ("C:\Users\tas18\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
@@ -576,7 +596,7 @@ consecutive:
 ) (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
 consecutive:
 )
-Overfull \hbox (10.4916pt too wide) in paragraph at lines 33--79
+Overfull \hbox (10.4916pt too wide) in paragraph at lines 33--80
 [][][][] 
  []
 
@@ -586,17 +606,17 @@ Overfull \hbox (10.4916pt too wide) in paragraph at lines 33--79
 <Q1_histograms/1.1/q1_n = 10_ p = 0.5.png, id=15, 722.7pt x 505.89pt>
 File: Q1_histograms/1.1/q1_n = 10_ p = 0.5.png Graphic file (type png)
 <use Q1_histograms/1.1/q1_n = 10_ p = 0.5.png>
-Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.5.png  used on input line 82.
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.5.png  used on input line 83.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
 <Q1_histograms/1.1/q1_n = 18_ p = 0.5.png, id=17, 722.7pt x 505.89pt>
 File: Q1_histograms/1.1/q1_n = 18_ p = 0.5.png Graphic file (type png)
 <use Q1_histograms/1.1/q1_n = 18_ p = 0.5.png>
-Package pdftex.def Info: Q1_histograms/1.1/q1_n = 18_ p = 0.5.png  used on input line 84.
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 18_ p = 0.5.png  used on input line 85.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
 <Q1_histograms/1.1/q1_n = 10_ p = 0.7.png, id=18, 722.7pt x 505.89pt>
 File: Q1_histograms/1.1/q1_n = 10_ p = 0.7.png Graphic file (type png)
 <use Q1_histograms/1.1/q1_n = 10_ p = 0.7.png>
-Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.7.png  used on input line 86.
+Package pdftex.def Info: Q1_histograms/1.1/q1_n = 10_ p = 0.7.png  used on input line 87.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
  [2 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 10_ p = 0.5.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 18_ p = 0.5.png>] [3 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.1/q1_n = 10_ p = 0.7.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
 consecutive:
@@ -616,22 +636,22 @@ Overfull \hbox (10.4916pt too wide) in paragraph at lines 60--61
 <Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png, id=33, 722.7pt x 505.89pt>
 File: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png Graphic file (type png)
 <use Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png>
-Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png  used on input line 97.
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png  used on input line 98.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
 <Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png, id=34, 722.7pt x 505.89pt>
 File: Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png Graphic file (type png)
 <use Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png>
-Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png  used on input line 99.
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png  used on input line 100.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
 <Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png, id=35, 722.7pt x 505.89pt>
 File: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png Graphic file (type png)
 <use Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png>
-Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png  used on input line 101.
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png  used on input line 102.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
 <Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png, id=36, 722.7pt x 505.89pt>
 File: Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png Graphic file (type png)
 <use Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png>
-Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png  used on input line 103.
+Package pdftex.def Info: Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png  used on input line 104.
 (pdftex.def)             Requested size: 361.3491pt x 252.94437pt.
  [5 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 20_p = 0.5.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 24_p = 0.5.png>] [6 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 20_p = 0.7.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q1_histograms/1.2/Q1.2 _n = 23_p = 0.7.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\q1.py
 consecutive:
@@ -642,72 +662,187 @@ Overfull \hbox (188.94962pt too wide) in paragraph at lines 98--99
 [][][][] 
  []
 
+) [7]
+<Q2/bin5.png, id=51, 548.0475pt x 413.29407pt>
+File: Q2/bin5.png Graphic file (type png)
+<use Q2/bin5.png>
+Package pdftex.def Info: Q2/bin5.png  used on input line 122.
+(pdftex.def)             Requested size: 169.29684pt x 127.67207pt.
+<Q2/bin20.png, id=52, 561.59813pt x 441.14813pt>
+File: Q2/bin20.png Graphic file (type png)
+<use Q2/bin20.png>
+Package pdftex.def Info: Q2/bin20.png  used on input line 123.
+(pdftex.def)             Requested size: 174.13116pt x 136.78143pt.
+<Q2/bin100.png, id=53, 550.30594pt x 405.76593pt>
+File: Q2/bin100.png Graphic file (type png)
+<use Q2/bin100.png>
+Package pdftex.def Info: Q2/bin100.png  used on input line 124.
+(pdftex.def)             Requested size: 181.38632pt x 133.74219pt.
+<Q2/bin1000.png, id=54, 514.92375pt x 402.75468pt>
+File: Q2/bin1000.png Graphic file (type png)
+<use Q2/bin1000.png>
+Package pdftex.def Info: Q2/bin1000.png  used on input line 125.
+(pdftex.def)             Requested size: 169.29684pt x 132.4178pt.
+ [8 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/bin5.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/bin20.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/bin100.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/bin1000.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q2.py
+consecutive:
 )
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+<Q2/beforeremoving.png, id=66, 423.984pt x 321.6015pt>
+File: Q2/beforeremoving.png Graphic file (type png)
+<use Q2/beforeremoving.png>
+Package pdftex.def Info: Q2/beforeremoving.png  used on input line 153.
+(pdftex.def)             Requested size: 193.47578pt x 146.75583pt.
+<Q2/afterremoving.png, id=67, 443.85825pt x 333.6465pt>
+File: Q2/afterremoving.png Graphic file (type png)
+<use Q2/afterremoving.png>
+Package pdftex.def Info: Q2/afterremoving.png  used on input line 157.
+(pdftex.def)             Requested size: 193.47578pt x 145.43542pt.
+<Q2/afterremoving2.png, id=68, 439.04025pt x 321.6015pt>
+File: Q2/afterremoving2.png Graphic file (type png)
+<use Q2/afterremoving2.png>
+Package pdftex.def Info: Q2/afterremoving2.png  used on input line 158.
+(pdftex.def)             Requested size: 193.47578pt x 141.72101pt.
+ [9 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/beforeremoving.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/afterremoving.png> <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/afterremoving2.png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q2.py
+consecutive:
+)
+<Q2/2.3.png, id=76, 439.6425pt x 330.63525pt>
+File: Q2/2.3.png Graphic file (type png)
+<use Q2/2.3.png>
+Package pdftex.def Info: Q2/2.3.png  used on input line 180.
+(pdftex.def)             Requested size: 193.47578pt x 145.50014pt.
+ (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q2.py
+consecutive:
+)
+<Q2/expected value.png, id=77, 423.984pt x 322.20375pt>
+File: Q2/expected value.png Graphic file (type png)
+<use Q2/expected value.png>
+Package pdftex.def Info: Q2/expected value.png  used on input line 190.
+(pdftex.def)             Requested size: 193.47578pt x 147.03065pt.
+ [10 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/2.3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-[7] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(1).py)
-<Q3/Q3(1).png, id=53, 462.528pt x 346.896pt>
+(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(1).py [11 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q2/expected value.png>])
+<Q3/Q3(1).png, id=94, 462.528pt x 346.896pt>
 File: Q3/Q3(1).png Graphic file (type png)
 <use Q3/Q3(1).png>
-Package pdftex.def Info: Q3/Q3(1).png  used on input line 145.
+Package pdftex.def Info: Q3/Q3(1).png  used on input line 223.
 (pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+ [12 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(1).png>]
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-[8] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(2).py [9 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(1).png>])
-<Q3/Q3(2).png, id=64, 462.528pt x 346.896pt>
+(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(2).py)
+<Q3/Q3(2).png, id=99, 462.528pt x 346.896pt>
 File: Q3/Q3(2).png Graphic file (type png)
 <use Q3/Q3(2).png>
-Package pdftex.def Info: Q3/Q3(2).png  used on input line 169.
-(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(3).py [10 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(2).png>])
-<Q3/Q3(3).png, id=71, 462.528pt x 346.896pt>
-File: Q3/Q3(3).png Graphic file (type png)
-<use Q3/Q3(3).png>
-Package pdftex.def Info: Q3/Q3(3).png  used on input line 197.
+Package pdftex.def Info: Q3/Q3(2).png  used on input line 243.
 (pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(3).png>]
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+[14 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(2).png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q3/Q3(3).py)
+<Q3/Q3(3).png, id=108, 462.528pt x 346.896pt>
+File: Q3/Q3(3).png Graphic file (type png)
+<use Q3/Q3(3).png>
+Package pdftex.def Info: Q3/Q3(3).png  used on input line 280.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
+consecutive:
+
+Overfull \hbox (0.29399pt too wide) in paragraph at lines 6--7
+[][][][] 
+ []
+
+[16 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q3/Q3(3).png>])
+<Q4/Q4(1).png, id=116, 462.528pt x 346.896pt>
+File: Q4/Q4(1).png Graphic file (type png)
+<use Q4/Q4(1).png>
+Package pdftex.def Info: Q4/Q4(1).png  used on input line 305.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+ [17 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(1).png>]
+<Q4/4.2_circle.png, id=121, 209.13132pt x 207.77625pt>
+File: Q4/4.2_circle.png Graphic file (type png)
+<use Q4/4.2_circle.png>
+Package pdftex.def Info: Q4/4.2_circle.png  used on input line 313.
+(pdftex.def)             Requested size: 146.3909pt x 145.44237pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--326
+
+ []
+
+(d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
+consecutive:
+
+Overfull \hbox (0.29399pt too wide) in paragraph at lines 36--37
+[][][][] 
+ []
+
+[18 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/4.2_circle.png>])
+<Q4/Q4(2).png, id=126, 462.528pt x 346.896pt>
+File: Q4/Q4(2).png Graphic file (type png)
+<use Q4/Q4(2).png>
+Package pdftex.def Info: Q4/Q4(2).png  used on input line 338.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+ [19 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(2).png>] (d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Q4.py
+consecutive:
+
+Overfull \hbox (0.29399pt too wide) in paragraph at lines 75--77
+[][][][] 
+ []
+
+[20])
+<Q4/Q4(3).png, id=135, 462.528pt x 346.896pt>
+File: Q4/Q4(3).png Graphic file (type png)
+<use Q4/Q4(3).png>
+Package pdftex.def Info: Q4/Q4(3).png  used on input line 360.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+ [21 <d:/Habib/04.Sophomore-Spring2021/Probability/Probab_Project/Prob-Project/Q4/Q4(3).png>] [22]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
 ("d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.aux") ) 
 Here is how much of TeX's memory you used:
- 17438 strings out of 480898
- 324071 string characters out of 2898310
- 933352 words of memory out of 3000000
- 32971 multiletter control sequences out of 15000+200000
- 547241 words of font info for 63 fonts, out of 3000000 for 9000
+ 18674 strings out of 480898
+ 347022 string characters out of 2898310
+ 941195 words of memory out of 3000000
+ 34166 multiletter control sequences out of 15000+200000
+ 550327 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,60p,534b,1817s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on "d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.pdf" (12 pages, 466924 bytes).
+ 60i,11n,60p,698b,1813s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0900.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Users/tas18/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on "d:/Habib\04.Sophomore-Spring2021\Probability\Probab_Project\Prob-Project\Project Documentation.pdf" (22 pages, 859188 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
