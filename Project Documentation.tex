@@ -120,41 +120,36 @@ Calling the function for several iterations to get multiple expected values:
 \subsection*{3.1}
 
 \begin{framed}
-  For part $3.1$, we followed the method specified in the question. The program takes radius as an input from the user, and passes it to \emph{gen\_points(R)} to display the graph.
+  For part $3.1$, we followed the method specified in the question. The program takes radius as an input from the user, and passes it to \emph{gen\_points(R)} to display the graph. It first finds random radius R and angle $\theta$, then converts it into cartesian cordinates. It stores the values of x and y till the iterations are running, then plot the points. To make sure the points lie in the given radius, we also draw the circle.
   \begin{itemize}
-    \item \emph{polar\_to\_cart(r,t)}: This function takes the polar cordinates $(r \text{and} \theta)$ and converts them to their cartesian equivalent. It is called from \emph{random\_point(R)}, to return the cartesian cordinates.\\
+    \item \emph{polar\_to\_cart(r,t)}: This function takes the polar cordinates $(r \;\text{and}\; \theta)$ and converts them to their cartesian equivalent. It is called from \emph{random\_point(R)}, to return the cartesian cordinates. It uses the following formulae,\\
       \begin{align*}
         x &= r\cos(\theta)\\
         y &= r\sin(\theta)
       \end{align*}
+
     \item \emph{random\_point(R)}: The function is responsible for generating a random point in polar cordinates, and returns the converted cartesian cordinates.\\
-      \begin{align*}
-        R = random.uniform(0,radius)\\
-        \theta = random.uniform(0,360)(\frac{\pi}{180})
-      \end{align*}
-    \item \emph{gen\_points(R)}: This is the main function which runs 1000 iterations, and calls \emph{random\_point(R)}, stores the result in the separate lists for $X$ and $Y$ cordinates. Then the lists are passed to the plot functions, to graph the points.
+    
+    \item \emph{gen\_points(R)}: This is the main function which runs 1000 iterations, and calls \emph{random\_point(R)}, and stores the result in the separate lists for $X$ and $Y$ cordinates. Then the lists are passed to the plot functions, to graph the points.
 
   \end{itemize}
+  The resulting graph has very dense distribution towards the center.
 \end{framed}
 
 \lstinputlisting[firstline=1,lastline=48,language=python]{Q3/Q3(1).py}
 
 \begin{figure}[h]
-  \caption{radius = 100, variance of x = 1626.2176657086331}
   \centering
   \includegraphics[scale=0.7]{Q3/Q3(1).png}
 \end{figure}
-
+\newpage
 %--------------------------------  3.2  ------------------------------------
 \subsection*{3.2}
 \begin{framed}
   \indent In part $3.2$, we calculated the cartesian cordinates directly from the specified radius R. If the random point lied farther from the distance from the origin, it will be discarded and the program will find a new point.
   \begin{itemize}
     \item \emph{random\_point(R)}: This function finds random points for $x$ and $y$ cordinates between the range $-R$ and $R$. It returns the tuple with cartesian cordinates.\\
-      \begin{align*}
-        x=random.uniform(-R,R)\\
-        y=random.uniform(-R,R)
-      \end{align*}
+    
     \item \emph{dist\_from\_origin(x,y)}: The function find and return the distance of the point from the origin.\\
       \begin{align*}
         dist=\sqrt{x^2+y^2}
@@ -164,22 +159,31 @@ Calling the function for several iterations to get multiple expected values:
 \end{framed}
 \lstinputlisting[firstline=1,lastline=46,language=python]{Q3/Q3(2).py}
 \begin{figure}[h]
-  \caption{radius = 100, variance of x = 2533.130556271337}
   \centering
   \includegraphics[scale=0.7]{Q3/Q3(2).png}
 \end{figure}
-
+\newpage
 %--------------------------------  3.3  ------------------------------------
 \subsection*{3.3}
 \begin{framed}
-  \indent In part $3.3$, we had to modify the function for polar cordinates, such that the graph it made was uniformly distributed, similar to part $3.2$.
+  \indent In part $3.3$, we had to modify the function for polar cordinates, such that the graph it made was uniformly distributed, similar to the histogram of part $3.2$.\\
+  \indent The reason behind the uneven distribution when we used polar cordinates was because of the way polar and cartesian planes interact. If we plot points in a smaller radius with varying angles, the points will be closer, as compare to a larger radius. For larger radius the points will be far apart. So when we were converting them into cartesian cordinates, many of them lied near the origin. To solve this, we simply take the CDF, i.e. the area of the circle, and make radius r its subject. Mathematically,\\
+  \begin{align*}
+    P(r\leq R)&=k.\pi.r^2\\
+    \intertext{To find k, we use P(r=R), which is equals to 1.}\\
+    k.\pi.R^2&=1\\
+    k &= \frac{1}{R^2\pi}\\
+    \intertext{Now that we know the value of k, we can find the whole CDF by plugging its value.}\\
+    CDF &= (\frac{1}{R^2\pi})(r^2\pi)=\frac{r^2}{R^2}\\
+    \intertext{Now we make radius r, the subject of the equation.}\\
+    r &= \sqrt{R^2.CDF} = R\sqrt{CDF}
+  \end{align*}
+  \indent We can find our random radius r using this formula. This will produce the points in proportionality with the area of the circle, thus keeping the point uniform.\\
+  \indent From here, we will describe the functionality of the coded program.
 
   \begin{itemize}
     \item \emph{random\_point(R)}: The function finds random radius R and theta $\theta$. It uses the function for R derived above. 
-      \begin{align*}
-        R &= radius\sqrt[3]{(random.uniform(0,1))}\\
-        \theta &= random.uniform(0,360)(\frac{\pi}{180})
-      \end{align*}
+
     \item \emph{polar\_to\_cart(cord)}: This is the same function that we used in part 3.1. The function takes radius r and angle t as the input, and returns the cartesian cordinates. We use the following formulae to derive the cordinates,\\
       \begin{align*}
         x &= r\cos(t)\\
@@ -192,8 +196,93 @@ Calling the function for several iterations to get multiple expected values:
 \lstinputlisting[firstline=1,lastline=53,language=python]{Q3/Q3(3).py}
 
 \begin{figure}[h]
-  \caption{radius = 2, variance of x = 1.017564829759483}
   \centering
   \includegraphics[scale=0.7]{Q3/Q3(3).png}
 \end{figure}
+\newpage
+
+\section*{Q4. Saying Random is not enough}
+
+%--------------------------------  4.1  ------------------------------------
+  \subsection*{4.1}
+    \begin{framed}
+        For 4.1, we took the approach specified in the question. We first pick two random angles $\theta_1$ and $\theta_2$. Then find their difference to find the angle lying in between $\theta_1$ and $\theta_2$. Then we use this new angle in \emph{cord length} formula. The program does this process 1000 times and stores the values in the specified list, then graphs a histogram for the length of the cords and the probability of them occuring. Following describes each function and their purpose/method for the program.
+        \begin{enumerate}
+            \item \emph{random\_theta()}: The function finds random $\theta_1$ and $\theta_2$. $\theta$ is chosen randomly from degrees($\phi$) and then converted to radians.
+                    \begin{align*}
+                        \theta_1 &= \phi_1 . \frac{\pi}{180}\\
+                        \theta_2 &= \phi_2 . \frac{\pi}{180}
+                    \end{align*}
+            \item \emph{cord(R)}: The function takes the radius as the input and returns length of the cord between $\theta_1$ and $\theta_2$. It first calls \emph{random\_theta()}, and find the absolute value of their difference ($\theta=|\theta_1 - \theta_2|$). Then the length of the cord in calculated using the following formula for cord length,
+                    $$\text{cord length}=2R.\sin(\theta/2)$$
+            \item \emph{find\_cords1(R)}: The function takes radius R as input, then draw the histogram as the output. It iterates 1000 times, calls \emph{cord(R)} for each iteration and append the result in \emph{cord\_len}. The bin value is set to be 50 as it provides a good threshold for the 1000 values. Then it plots the graph using matplotlib.
+        \end{enumerate}
+    \end{framed}
+    \lstinputlisting[firstline=5,lastline=34,language=python]{Q4.py}
+    \begin{figure}[ht]
+        \caption{Histogram of 4.1}
+        \centering
+        \includegraphics[scale=0.7]{Q4/Q4(1).png}
+    \end{figure}
+\newpage
+%--------------------------------  4.2  ------------------------------------
+  \subsection*{4.2}
+    \begin{framed}
+        For 4.2, we follow the instructions given in the question. We first pick a direction/angle and assume an imaginary radius there. Then we pick a random point on that radius and find its distance from the origin $(0,0)$. This serves as our base, while to radius R serves as our hypotaneous. Then we find the perpendicular using the pythagorean theorem, and returns the twice of it. As the perpendicular shows the half part of that cord, with randomly chosen point as its center. This point is also the midpoint for our circle, so we double the perpendicular to find the whole cord length.
+        \begin{center}
+            \includegraphics[scale=0.7]{Q4/4.2_circle.png}
+        \end{center}
+        \begin{enumerate}
+            \item \emph{random\_cord(R)}: This function does multiple tasks. It first find a random direction/angle in the circle, assumes a radius on that angle, and pick a random point on the assumed radius. This point serves as the Midpoint M as well. Then it converts the polar cordinates into cartesian using the following formulae,
+                \begin{align*}
+                    x &= rcos(\theta)\\
+                    y &= rsin(\theta)
+                \end{align*}
+            Then we find our base b and perpendicular p, while assuming it is a right-angle triangle because \emph{p} and \emph{b} makes a right-angle triangle. In our case we assume the distance between the origin and the random point $(x,y)$ to be our base, and radius R as our hypotaneous. We use the \emph{distance formula} to find the value of base,\\
+                \begin{align*}
+                    base &= \sqrt{x^2+y^2}
+                \end{align*}
+            Then we find the value of perpendicular line by using the pythagorean theroem,\\
+                \begin{align*}
+                    perpendicular &= \sqrt{R^2-base^2}
+                \end{align*}
+            Then we simply multiply the value of perpendicular to find the length of the cord and return it.
+            \item \emph{find\_cords2(R)}: This function runs 1000 iterations of the \emph{random\_cord(R)} function, and stores their result in the list \emph{cord\_len}, sets the bin width as 50, and then graphs the histogram as the result.
+        \end{enumerate}
+        We run this program with radius 30. The resulting histogram seems to be an exponentially rising graph, with a flat start.
+    \end{framed}
+    \lstinputlisting[firstline=35,lastline=73,language=python]{Q4.py}
+    \begin{figure}[h]
+        \caption{Histogram of 4.2}
+        \centering
+        \includegraphics[scale=0.7]{Q4/Q4(2).png}
+    \end{figure}
+\newpage
+%--------------------------------  4.3  ------------------------------------
+  \subsection*{4.3}
+    \begin{framed}
+        For 4.3, it is similar to 4.2 with a slight difference. Instead of determining a direction, we pick a random point in the circle, and then calculates its distance from the origin $(0,0)$. If the distance is within the circle as well, we regard it as our base/adjacent of the right triangle. Then we move towards calculating the opposite/perpendicular by using pythagorean theorem, multiply it by 2 to find the total length, and then store it in the list. Then we pass that list plotting functions to plot a histogram.
+        \begin{enumerate}
+            \item \emph{p\_to\_o(cord)}: This function simply returns the distance between the randomly chosen point and the origin $(0,0)$. It takes a tuple of cartesian cordinates as the input and returns the distance. It uses the distance formula,
+                \begin{align*}
+                    dist=\sqrt{x^2+y^2}
+                \end{align*}
+            \item \emph{random\_point(R)}: It chooses random points for cartesian cordinates $(x,y)$ between the R and -R.
+            \item \emph{cal\_cord(R,pnt)}: It takes the randomly chosen point, and finds its distance from the origin, then uses it as the adjacent/base of our right-angle triangle within the circle. Then it finds the value of the opposite/perpendicular via pythagorean theorem, and returns the twice of the opposite as the cord length.
+            \item \emph{find\_cords3(R)}: This function runs 1000 times while calling the \emph{random\_point(R)} function, then it checks if the distance/base lies within the circle or not. If it does, then it proceeds to find \emph{cal\_cord(R,pnt)} and store it, else it decrements the counter by 1, to discard that value and find another.
+        \end{enumerate}
+        We run this program for radius 20. The histogram looks quite linear.
+    \end{framed}
+    \lstinputlisting[firstline=74,lastline=119,language=python]{Q4.py}
+    \begin{figure}[h]
+        \caption{Histogram of 4.3}
+        \centering
+        \includegraphics[scale=0.7]{Q4/Q4(3).png}
+    \end{figure}
+\newpage
+%--------------------------------  4.3  ------------------------------------
+\subsection*{4.4}
+    \begin{framed}
+        Out of all the distributions, I think the third approach (part 4.3) is the best to take. Its graph seems somewhat linear, which will ensure a little uniformity. As the previous graphs showed dense distribution towards the center of the circle, i.e. near the diameter, however in 4.3, the graph seems more distributed.
+    \end{framed}
 \end{document}
