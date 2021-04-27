@@ -11,7 +11,6 @@ def cointoss():
     #assuming 0 = T & 1 = H
     return(random.randint(0,1)) 
 
-
 def simulate_tosses():
     expected = []
     for n in range(100): #to get 100 expected values
@@ -20,7 +19,7 @@ def simulate_tosses():
             outcomes = []
             for i in range(10): #to get 10 outcomes/1 rejected value
                 outcomes.append(cointoss())
-            #check hypothesis accepted or rejected
+            #check if hypothesis is accepted or rejected
             if sum(outcomes) == 0 or sum(outcomes) == 1 or sum(outcomes) == 10 or sum(outcomes) == 9:
                 rejected.append(1) #hypothesis rejected
             else:
@@ -28,11 +27,11 @@ def simulate_tosses():
         expected.append(sum(rejected)/100)
     #plotting histogram
     fig, ax = plt.subplots(figsize =(10, 7))
-    ax.hist(expected, bins = [-0.01,0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1])
+    ax.hist(expected,width = 0.01)
     ax.set_xlabel('Times the null hypothesis is rejected')
     ax.set_ylabel('Frequency')
     plt.title('Mean: '+str(round(statistics.mean(expected),3))+', Variance: '+str(round(statistics.variance(expected),3)))
-    plt.savefig("Q5_histograms/Q5.1(1).png")
+    plt.savefig("Q5_histograms/Q5.1.png")
     plt.show()
 
 # simulate_tosses()
@@ -131,7 +130,7 @@ def simulation():
     plt.savefig("Q5_histograms/Q5.2.3_"+str(n)+"(3).png")
     plt.show()
 
-simulation()
+# simulation()
 
 # 5.2.1:
 # - is mean supposed to be equal to null hypothesis
